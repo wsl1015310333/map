@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>点位选择</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <link rel="stylesheet" href="../js/leaflet/leaflet.css">
+  <script src="../js/config.js"></script>
+    <script src="../js/leaflet/leaflet-heatmap.js"></script>
+
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <style>
+    *{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Roboto, Lato, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    body {
+      margin: 0px;
+    }
+    #map{
+      height: calc(100vh);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map .leaflet-bottom.leaflet-right {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div class="leaflet-map">
+  <div id="map"></div>
+</div>
+<script src="../js/leaflet/leaflet.js"></script>
+<script src="../js/leaflet/setRotationAngle.js"></script>
+<script>
+  var load = params.load
+  var mapOption = {
+    center: JSON.parse(params.map.center),
+    zoom: params.map.zoom,
+    minZoom: params.map.minZoom,
+    maxZoom: params.map.maxZoom,
+  }
+  var map = null
+  var mapCtrl = {
+    _markerOne: null,
+    init: function () {
+      this.initMap()
+    },
+   initMap: function () {
+  //   var _this = this
+  //    var pgisLayer = new L.TileLayer('http://{mapTileHost}/Maps/{mapName}/EzMap?Service=getImage&Type=RGB&ZoomOffset=0&Col={x}&Row={y}&Zoom={z}&V=1.0.0', {
+  //      maxZoom: mapOption.maxZoom,
+  //      minZoom: mapOption.minZoom,
+  //      tileSize: 256,
+  //      zoomOffset: 1,
+  //      mapTileHost: params.map.mapTileHost,
+  //      mapName: params.map.mapName
+  //    });
+     var pgisLayer = new L.TileLayer('http://www.sdmap.gov.cn/tileservice/SDPubMap?layer=sdvec&style=default&tilematrixset=c&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+       maxZoom: mapOption.maxZoom,
+       minZoom: mapOption.minZoom,
+       subdomains: [0, 1, 2],
+       tileSize: 256,
+       zoomOffset: 1,
+       mapTileHost: params.map.mapTileHost,
+       mapName: params.map.mapName
+     });
+      window.lmap = map = L.map('map', {crs: L.CRS.EPSG4326}).setView([mapOption.center[1], mapOption.center[0]], mapOption.zoom);
+      pgisLayer.addTo(map);
+    }
+  }
+  mapCtrl.init()
+  L.polygon([
+    [35.952312, 120.201416],
+    [35.956312, 120.202416],
+    [35.958312, 120.203416]
+  ]).addTo(map).bindPopup("I am a polygon.");
+
+  L.circle([35.952312, 120.201416], 500, {
+    color: 'red',
+    fillColor: '#f03',
+    fillOpacity: 0.5
+  }).addTo(map).bindPopup("I am a circle.");
+
+  window.addMarkerOne = function (lat, lng) {
+
+  alert(lat)
+    if (map) {
+      let opts  = L.icon({
+        iconUrl: `../images/stop-markerh.png`,
+        iconSize: [17, 23],
+      })
+      if (this._markerOne) {
+        map.removeLayer(this._markerOne)
+      }
+      let marker = L.marker([lat, lng], { icon: opts })
+      marker.addTo(map)
+      this._markerOne = marker
+      map.panTo([lat, lng])
+      map.setZoom(17)
+    }
+  }
+  addMarkerOne(35.958312, 120.201416)
+</script>
+</body>
+</html>

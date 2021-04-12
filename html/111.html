@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>点位选择</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <link rel="stylesheet" href="../js/leaflet/leaflet.css">
+  <script src="../js/config.js"></script>
+ 
+  
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <style>
+    *{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Roboto, Lato, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    #div1, #div2, #div3{
+    display: inline-block;
+}
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    body {
+      margin: 0px;
+    }
+    #map{
+      height: calc(100vh);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map .leaflet-bottom.leaflet-right {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div class="leaflet-map">
+  <div id="map"></div>
+</div>
+<script src="../js/leaflet/leaflet.js"></script>
+  <script src="../js/leaflet/heatmap.min.js"></script>
+
+      <script src="../js/leaflet/leaflet-heatmap.js"></script>
+        <script src="../js/leaflet/leaflet-heat.js"></script>
+
+<script src="../js/leaflet/setRotationAngle.js"></script>
+<script>
+  var load = params.load
+  var mapOption = {
+    center: JSON.parse(params.map.center),
+    zoom: params.map.zoom,
+    minZoom: params.map.minZoom,
+    maxZoom: params.map.maxZoom,
+  }
+  var map = null
+  var heatmapLayer = null
+
+  var mapCtrl = {
+    _markerOne: null,
+    init: function () {
+      this.initMap()
+    },
+   initMap: function () {
+ //        //配置
+       var cfg = {       
+            "radius": 0.001,
+            "maxOpacity": .8, 
+            "scaleRadius": true, 
+            "useLocalExtrema": true,
+            latField: 'lat',
+            lngField: 'lng',
+            valueField: 'count'
+        };
+         
+  heatmapLayer = new HeatmapOverlay(cfg);
+
+  //   var _this = this
+  //    var pgisLayer = new L.TileLayer('http://{mapTileHost}/Maps/{mapName}/EzMap?Service=getImage&Type=RGB&ZoomOffset=0&Col={x}&Row={y}&Zoom={z}&V=1.0.0', {
+  //      maxZoom: mapOption.maxZoom,
+  //      minZoom: mapOption.minZoom,
+  //      tileSize: 256,
+  //      zoomOffset: 1,
+  //      mapTileHost: params.map.mapTileHost,
+  //      mapName: params.map.mapName
+  //    });
+     var pgisLayer = new L.TileLayer('http://www.sdmap.gov.cn/tileservice/SDPubMap?layer=sdvec&style=default&tilematrixset=c&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+       maxZoom: mapOption.maxZoom,
+       minZoom: mapOption.minZoom,
+       subdomains: [0, 1, 2],
+       tileSize: 256,
+       zoomOffset: 1,
+       mapTileHost: params.map.mapTileHost,
+       mapName: params.map.mapName
+     });
+      window.lmap = map = L.map('map', {crs: L.CRS.EPSG4326, layers: [ pgisLayer,heatmapLayer]}).setView([mapOption.center[1], mapOption.center[0]], mapOption.zoom);
+    
+    }
+  }
+
+  mapCtrl.init()
+
+ // control that shows state info on hover
+  var info = L.control();
+
+  info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+
+  info.update = function (props) {
+    this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
+      '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+      : 'Hover over a state');
+  };
+
+  info.addTo(map);
+
+
+  // get color depending on population density value
+
+
+    var markers=[];
+
+    //系统默认的marker,有一个蓝色图标
+    var marker1 =L.marker([36.94853, 118.06856]);
+
+    //自定义的circleMarker
+    var marker2 = L.circleMarker([36.95853, 118.07856], {
+        stroke: true,
+        color: '#aaaaaa',
+        weight: 1,
+        opacity: 1,
+        fillColor: '#00e400',
+        fillOpacity: 1,
+        radius: 10
+    });
+
+    //用html的div来创建icon，但是有缺陷
+    var icon3 = L.divIcon({
+        html: "<div style='width: 15px;height:15px;border-radius: 50%;background-color:#00e400 ;'></div>",
+        iconAnchor: [1, 1]});
+    var marker3 =L.marker([36.96853, 118.08856], { icon: icon3 });
+var htmlStr="<div id='wrap' style='width:80px;height:40px;border-radius:4px;background-color:#ffffff ;'><div id='div1' style='width:80px;height:20px;'><div style='width:5px;height:5px;border-radius:50%;background-color:red;'></div><font style='font-size:10px;'>测试</br></div><font style='font-size:10px;'>1521872400</div>"
+
+    //用html的div的样式来创建marker的icon，注意需要加className属性，否则会出现marker1的问题
+    var icon4 = L.divIcon({
+        html: htmlStr,
+        className: 'ss',});
+    var marker4 =L.marker([36.97853, 118.09856], { icon: icon4 });
+
+
+
+    //markers.push(marker1);
+   //markers.push(marker2);
+    //markers.push(marker3);
+    markers.push(marker4);
+
+    var citiesLayer = L.layerGroup(markers);
+
+    map.addLayer(citiesLayer);
+
+</script>
+</body>
+</html>

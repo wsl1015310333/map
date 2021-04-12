@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>点位选择</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <link rel="stylesheet" href="../js/leaflet/leaflet.css">
+  <script src="../js/config.js"></script>
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <style>
+    *{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Roboto, Lato, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    body {
+      margin: 0px;
+    }
+    #map{
+      height: calc(100vh * 0.5);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map .leaflet-bottom.leaflet-right {
+      display: none;
+    }
+    .position-list{
+      height: calc(100vh * 0.5);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow-y: auto;
+    }
+    .position-list .list-item {
+      padding: 10px 10px;
+      border-bottom: 1px solid #e9eef3;
+      position: relative;
+    }
+    .position-list .list-item .checked {
+      display: none;
+      position: absolute;
+      top: calc(50% - 10px);
+      right: 0px;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid #0094fb;
+      padding: 4px;
+    }
+    .position-list .list-item.active .checked{
+      display: block;
+    }
+    .position-list .list-item .checked .center{
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #0094fb;
+    }
+    .position-list .list-item h3{
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 600;
+      width: calc(100vw - 30px - 40px);
+      margin-top: 0;
+      margin-bottom: 5px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .position-list .list-item .text{
+      font-size: 14px;
+      line-height: 14px;
+      font-weight: 400;
+      color: #999999;
+      width: calc(100vw - 30px - 40px);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .no-data {
+      text-align: center;
+      width: 100%;
+      height: 300px;
+      padding-top: 240px;
+      display: none;
+      background: url("../images/no-data1.png");
+      background-size:213px 180px;
+      background-repeat:no-repeat;
+      background-position: center;
+    }
+    .load-data {
+      width: 100%;
+      height: 200px;
+      display: none;
+      background: url("../images/loading.gif");
+      background-size:100px 100px;
+      background-repeat:no-repeat;
+      background-position: center;
+    }
+    .load-footer {
+      width: 100%;
+      height: 17px;
+      display: none;
+      background: url("../images/gb-loading.gif");
+      background-size:18px 17px;
+      background-repeat:no-repeat;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="leaflet-map">
+    <div id="map"></div>
+    <div class="position-list">
+      <div class="load-data"></div>
+      <div class="no-data">
+        暂无点位信息
+      </div>
+      <div class="content">
+        <!--<div class="list-item">-->
+          <!--<div class="checked">-->
+            <!--<div class="center"></div>-->
+          <!--</div>-->
+          <!--<h3>青岛西海岸新区第一高级中学</h3>-->
+          <!--<div class="text">山东省黄岛区长江路123号</div>-->
+        <!--</div>-->
+      </div>
+      <div class="load-footer"></div>
+    </div>
+
+  </div>
+  <script src="../js/leaflet/leaflet.js"></script>
+  <script src="../js/leaflet/setRotationAngle.js"></script>
+  <script>
+    var load = params.load
+    var mapOption = {
+      center: JSON.parse(params.map.center),
+      zoom: params.map.zoom,
+      minZoom: params.map.minZoom,
+      maxZoom: params.map.maxZoom,
+     // url: 'http://' + params.lmapHost + '/api/get_view_points',
+            url: 'http://' +params.lmapHost+'/Deploy/?c=social_float_app&m=community_map',
+
+    }
+    var map = null
+    var timer = null
+    var mapCtrl = {
+      marker: null,
+      _url: mapOption.url,
+      _sw: '',
+      _ne: '',
+      _pn: 0,
+      _pageSize: params.pageSize,
+      _length: 0,
+      // 数组
+      markerArr: [], // 用来保存点位以添加到地XXXX图上使用
+      pickedMarker: {}, // 已选点位id 和 text数组,
+      _markerOne: null,
+      init: function () {
+        var _this = this
+        this.$affirmBtn = ''
+        this.initMap()
+        this.getLocation()
+        this.changeLocation()
+        this.loadMore()
+      },
+     initMap: function () {
+    //   var _this = this
+    //    var pgisLayer = new L.TileLayer('http://{mapTileHost}/Maps/{mapName}/EzMap?Service=getImage&Type=RGB&ZoomOffset=0&Col={x}&Row={y}&Zoom={z}&V=1.0.0', {
+    //      maxZoom: mapOption.maxZoom,
+    //      minZoom: mapOption.minZoom,
+    //      tileSize: 256,
+    //      zoomOffset: 1,
+    //      mapTileHost: params.map.mapTileHost,
+    //      mapName: params.map.mapName
+    //    });
+        var pgisLayer = new L.TileLayer('http://www.sdmap.gov.cn/tileservice/SDPubMap?layer=sdvec&style=default&tilematrixset=c&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+          maxZoom: mapOption.maxZoom,
+          minZoom: mapOption.minZoom,
+          subdomains: [0, 1, 2],
+          tileSize: 256,
+          zoomOffset: 1,
+          mapTileHost: params.map.mapTileHost,
+          mapName: params.map.mapName
+        });
+        window.lmap = map = L.map('map', {crs: L.CRS.EPSG4326}).setView([mapOption.center[1], mapOption.center[0]], mapOption.zoom);
+        pgisLayer.addTo(map);
+        map.on('dragend', function (e) {
+          _this.getLocation()
+        });
+        map.on('zoomend', function (e) {
+          _this.getLocation()
+        });
+      },
+      // handleCallBack () {
+      //   alert(1111)
+      // },
+      getLocation: function () {
+        var _this = this
+        var _bounds = map.getBounds()
+        var data = {}
+        this._sw = _bounds._southWest.lng + ',' + _bounds._southWest.lat
+        this._ne = _bounds._northEast.lng + ',' + _bounds._northEast.lat
+        if (load) {
+          data = { 'sw': this._sw, 'ne': this._ne, 'pn': this._pn, 'pageSize': this._pageSize }
+        } else {
+          data = { 'sw': this._sw, 'ne': this._ne }
+        }
+
+        $.ajax({
+          async: false,
+          url: this._url,
+          data: data,
+          beforeSend: function() {
+            $('.load-data').show()
+            $('.no-data').hide()
+            $('.content').hide()
+            $('.load-footer').hide()
+          },
+          jsonp:'callback',
+          dataType: 'jsonp',
+          jsonpCallback: 'handleCallBack'
+        }).done(function (e) {
+          var { status, message, data } = e
+          var template = ''
+          if (status) {
+            _this._length += data.length
+            data.forEach(function (elem) {
+              template += `<div class="list-item" data-lnglat="${elem.lng},${elem.lat}" data-text="${elem.text}" data-location="${elem.location}">
+                           <div class="checked">
+                             <div class="center"></div>
+                           </div>
+                           <h3>${elem.text}</h3>
+                           <div class="text">${elem.location}</div>
+                         </div>`
+            })
+            $('.load-data').hide()
+            $('.no-data').hide()
+            $('.content').show()
+            $('.content').html(template)
+            $('.load-footer').hide()
+          } else {
+            $('.load-data').hide()
+            $('.no-data').show()
+            $('.content').hide()
+            $('.load-footer').hide()
+            alert(message)
+          }
+        }).fail(function () {
+          $('.load-data').hide()
+          $('.no-data').show()
+          $('.content').hide()
+          $('.load-footer').hide()
+          alert('数据请求失败!')
+        })
+      },
+      loadMore: function () {
+        var _this = this
+        if (load) {
+          $('.position-list').scroll(function () {
+            clearTimeout(timer)
+            var height = $('.position-list').height()
+            var elTop = $('.position-list .list-item').eq(_this._length - 1).position().top + $('.position-list .list-item').eq(_this._length - 1).height()
+            if (2 * height >= elTop) {
+              $('.load-footer').show()
+              timer = setTimeout(() => {
+                _this._pn++
+                _this.appendItem()
+              },600)
+            }
+          })
+        }
+      },
+      appendItem: function () {
+        var _bounds = map.getBounds()
+        this._sw = _bounds._southWest.lng + ',' + _bounds._southWest.lat
+        this._ne = _bounds._northEast.lng + ',' + _bounds._northEast.lat
+        $.ajax({
+          async: false,
+          url: this._url,
+          data: { 'sw': this._sw, 'ne': this._ne, 'pn': this._pn, 'pageSize': this._pageSize },
+          dataType: 'json'
+        }).done(function (e) {
+          var { status, message, data } = e
+          var template = ''
+          if (!status) {
+            data.forEach(function (elem) {
+              this._length += data.length
+              template += `<div class="list-item" data-lnglat="${elem.lng},${elem.lat}" data-text="${elem.text}" data-location="${elem.location}">
+                           <div class="checked">
+                             <div class="center"></div>
+                           </div>
+                           <h3>${elem.text}</h3>
+                           <div class="text">${elem.location}</div>
+                         </div>`
+            })
+            $('.content').append(template)
+            $('.load-footer').hide()
+          } else {
+            $('.load-footer').hide()
+            alert(message)
+          }
+        }).fail(function () {
+          $('.load-footer').hide()
+          alert('数据请求失败!')
+        })
+      },
+      changeLocation: function () {
+        var _this = this
+        $('.position-list').on('click', '.list-item', function () {
+          var $this = $(this)
+          if ($this.hasClass('active')) {
+            $this.removeClass('active')
+            _this.pickedMarker = {}
+            map.removeLayer(_this._markerOne)
+          } else {
+            $this.siblings().removeClass('active')
+            $this.addClass('active')
+            _this.pickedMarker = {
+              text: $this.attr('data-text'),
+              location: $this.attr('data-location'),
+              lnglat: $this.attr('data-lnglat')
+            }
+            _this.addMarkerOne($this.attr('data-lnglat').split(',')[1], $this.attr('data-lnglat').split(',')[0])
+          }
+        })
+      },
+      addMarkerOne: function (lat, lng) {
+        if (map) {
+          let opts  = L.icon({
+            iconUrl: `../images/stop-markerh.png`,
+            iconSize: [17, 23],
+          })
+          if (this._markerOne) {
+            map.removeLayer(this._markerOne)
+          }
+          let marker = L.marker([lat, lng], { icon: opts })
+          marker.addTo(map)
+          this._markerOne = marker
+          map.panTo([lat, lng])
+          android.onLocationCallback(lat,lng)
+        }
+      }
+    }
+    mapCtrl.init()
+    window.affirmLocation = function () {
+      if (Object.keys(mapCtrl.pickedMarker).length <= 0) {
+        android.ClearAll();
+        android.showToast();
+        return false
+      }
+      var content = JSON.stringify(mapCtrl.pickedMarker)
+      window.localStorage.setItem('marker', content)
+      // -----------------------------
+      android.localStorage(localStorage.getItem('marker'))
+      android.showToast();
+    }
+  </script>
+</body>
+</html>

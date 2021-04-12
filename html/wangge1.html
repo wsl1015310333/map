@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>点位选择</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui"/>
+  <meta name="full-screen" content="yes">
+  <meta name="x5-fullscreen" content="true">
+  <link rel="stylesheet" href="../js/leaflet/leaflet.css">
+  <script src="../js/config.js"></script>
+ 
+  
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <style>
+    *{
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Roboto, Lato, sans-serif;
+      font-size: 14px;
+      color: #333;
+    }
+    #div1, #div2, #div3{
+    display: inline-block;
+}
+
+body {
+            margin: 0;
+        }
+
+        .map {
+            position: absolute;
+            height: 100%;
+            right: 0;
+            left: 0;
+        }
+
+        .menuBar {
+            position: relative;
+            text-align: center;
+            top: 10px;
+            margin: 0 50px;
+            padding: 5px;
+            border-radius: 3px;
+            z-index: 999;
+            color: #ffffff;
+            background-color: rgba(0, 168, 0, 1);
+        }
+
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    body {
+      margin: 0px;
+    }
+    #map{
+      height: calc(100vh);
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map .leaflet-bottom.leaflet-right {
+      display: none;
+    }
+
+  .center {
+     text-align: center;
+   
+    
+}
+.mypopup {
+    
+       bottom: 14px;
+  display: visible;
+  }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<div class="leaflet-map">
+  <div id="map"></div>
+</div>
+<script src="../js/leaflet/leaflet.js"></script>
+  <script src="../js/leaflet/heatmap.min.js"></script>
+
+      <script src="../js/leaflet/leaflet-heatmap.js"></script>
+        <script src="../js/leaflet/leaflet-heat.js"></script>
+<!--                 <script src="../js/leaflet/leaflet-tooltip-layout.dist.js"></script>
+ --><script type="text/javascript" src="../js/leaflet/Leaflet.PopupLayoutLayer.js"></script>
+<script type="text/javascript" src="../js/leaflet/leaflet.ShowHideLayerGroup.js"></script>
+
+
+
+
+<script src="../js/leaflet/setRotationAngle.js"></script>
+<script>
+  var load = params.load
+  var mapOption = {
+    center: JSON.parse(params.map.center),
+    zoom: params.map.zoom,
+    minZoom: params.map.minZoom,
+    maxZoom: params.map.maxZoom,
+  }
+  var map = null
+  var heatmapLayer = null
+
+  var mapCtrl = {
+    _markerOne: null,
+    init: function () {
+      this.initMap()
+    },
+   initMap: function () {
+ //        //配置
+       var cfg = {       
+            "radius": 0.001,
+            "maxOpacity": .8, 
+            "scaleRadius": true, 
+            "useLocalExtrema": true,
+            latField: 'lat',
+            lngField: 'lng',
+            valueField: 'count'
+        };
+         
+  heatmapLayer = new HeatmapOverlay(cfg);
+
+  //   var _this = this
+  //    var pgisLayer = new L.TileLayer('http://{mapTileHost}/Maps/{mapName}/EzMap?Service=getImage&Type=RGB&ZoomOffset=0&Col={x}&Row={y}&Zoom={z}&V=1.0.0', {
+  //      maxZoom: mapOption.maxZoom,
+  //      minZoom: mapOption.minZoom,
+  //      tileSize: 256,
+  //      zoomOffset: 1,
+  //      mapTileHost: params.map.mapTileHost,
+  //      mapName: params.map.mapName
+  //    });
+     var pgisLayer = new L.TileLayer('http://www.sdmap.gov.cn/tileservice/SDPubMap?layer=sdvec&style=default&tilematrixset=c&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+       maxZoom: mapOption.maxZoom,
+       minZoom: mapOption.minZoom,
+       subdomains: [0, 1, 2],
+       tileSize: 256,
+       zoomOffset: 1,
+       mapTileHost: params.map.mapTileHost,
+       mapName: params.map.mapName
+     });
+      window.lmap = map = L.map('map', {crs: L.CRS.EPSG4326, layers: [ pgisLayer,heatmapLayer]}).setView([mapOption.center[1], mapOption.center[0]], mapOption.zoom);
+    
+    }
+  }
+
+  mapCtrl.init()
+    var myLayerGroup = L.layerGroup().addTo(map)
+
+ // control that shows state info on hover
+  var info = L.control();
+
+  info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+  };
+
+  info.update = function (props) {
+    this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
+      '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+      : 'Hover over a state');
+  };
+
+  info.addTo(map);
+
+var popupLayoutLayer = new L.popupLayoutLayer({
+  showAll: true // true，显示所有气泡；默认为 false，通过点击查看气泡，
+}).addTo(map)
+  // get color depending on population density value
+
+
+    var markers=[];
+
+    //系统默认的marker,有一个蓝色图标
+    var marker1 =L.marker([36.94853, 118.06856]);
+
+    //自定义的circleMarker
+    var marker2 = L.circleMarker([36.97853, 118.09856], {
+        stroke: true,
+        color: '#aaaaaa',
+        weight: 1,
+        opacity: 1,
+        fillColor: '#00e400',
+        fillOpacity: 1,
+        radius: 10
+    });
+
+    //用html的div来创建icon，但是有缺陷
+    var icon3 = L.divIcon({
+        html: "<div style='width: 15px;height:15px;border-radius: 50%;background-color:#00e400 ;'></div>",
+        iconAnchor: [1, 1]});
+    var marker3 =L.marker([36.96853, 118.08856], { icon: icon3 });
+// var htmlStr="<div id='wrap' style='width:70px;height:30px;border-radius:4px;background-color:#ffffff;'><div style='width:70px;height:15px;'><div id ='div1' style='width:4px;height:4px;border-radius:50%;background-color:red;margin: 0px 0px 4px 0px'></div><font id='div2' style='font-size:14px;'>测试</div><font  style='font-size:1px;'>&nbsp15218724001</div><img style='src:'../images/stop-markerh.png'; width:17px; height:20px ;alt:""' />"
+
+
+var string1="测试"
+var stringPhone="15275284005"
+
+
+var htmlStr="<div id='wrap' style='width:70px;height:30px;border-radius:4px;background-color:#ffffff;'><div style='width:70px;height:15px;'><div id ='div1' style='width:4px;height:4px;border-radius:50%;background-color:red;margin: 0px 0px 4px 0px'></div><font id='div2' style='font-size:14px;'>"+string1+"</div><font  style='font-size:1px;'>&nbsp"+stringPhone
+
+// var htmlStr="<div id='wrap' style='width:70px;height:30px;border-radius:4px;background-color:#ffffff;'><div style='width:70px;height:15px;'><div id ='div1' style='width:4px;height:4px;border-radius:50%;background-color:red;margin: 0px 0px 4px 0px'></div><font id='div2' style='font-size:14px;'>"+string1+"</div><font  style='font-size:1px;'>&nbsp"+stringPhone+"</div><div  class='center' style='width:70px;height:20px;'><img  align='right' margin-left='20' src='../images/stop-markerh.png' width='15' height='20' alt='' /></div><div>"
+
+
+    //用html的div的样式来创建marker的icon，注意需要加className属性，否则会出现marker1的问题
+    var icon4 = L.divIcon({
+        html: htmlStr,
+        id:"1",
+        className: 'ss',});
+    var marker4 =L.marker([36.97853, 118.09856], { icon: icon4 }).on('click', function (e) {
+console.log(e.latlng.lat+" "+e.latlng.lng);
+
+      // alert(e.latlng.lat+" "+e.latlng.lng)
+
+console.log(e.target.options.icon);
+
+});
+
+
+window.addLine=function(startlat,startlng,endlat,endlng,currentLat,currentLng){
+var latlngs =[[startlat,startlng],[endlat,endlng]]
+var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+
+
+
+var iconUrlText='../images/../images/icon_map_head.png'
+
+var iconUrlText2='../images/../images/icon_mine.png'
+
+
+let opts  = L.icon({
+        iconUrl:iconUrlText ,
+        iconSize: [18, 18],
+      })
+let opts2  = L.icon({
+        iconUrl:iconUrlText2 ,
+        iconSize: [40, 40],
+      })
+      // if (this._markerOne) {
+      //   map.removeLayer(this._markerOne)
+      // }
+      let marker = L.marker([startlat, startlng], { icon: opts
+ })
+      marker.addTo(map).on('click', function (e) {
+console.log(e.latlng.lat+" "+e.latlng.lng);
+
+      // alert(e.latlng.lat+" "+e.latlng.lng)
+
+console.log(e.target.options.icon);
+
+})
+  let marker2 = L.marker([endlat, endlng], { icon: opts
+ })
+      marker2.addTo(map).on('click', function (e) {
+console.log(e.latlng.lat+" "+e.latlng.lng);
+
+      // alert(e.latlng.lat+" "+e.latlng.lng)
+
+console.log(e.target.options.icon);
+
+})
+  let marker3 = L.marker([currentLat, currentLng], { icon: opts2 
+})
+      marker3.addTo(map).on('click', function (e) {
+console.log(e.latlng.lat+" "+e.latlng.lng);
+
+      // alert(e.latlng.lat+" "+e.latlng.lng)
+
+         
+
+console.log(e.target.options.icon);
+
+})
+
+   // myLayerGroup.addLayer(marker1);
+   //          myLayerGroup.addLayer(marker2);
+   //          myLayerGroup.addLayer(marker3);
+   //          myLayerGroup.addLayer(polyline);
+}
+
+
+window.addMarkerOneType = function (lat, lng,type) {
+
+var iconUrlText=''
+//  alert(lat)
+if(type=='mj'){
+iconUrlText=`../images/icon_mj.png`
+}else if(type=='fj'){
+iconUrlText=`../images/icon_fj.png`
+
+}else if(type=='xq'){
+  htmlStr='小区xxx'
+iconUrlText=`../images/icon_xq.png`
+
+}else if(type=='cs'){
+iconUrlText=`../images/icon_cs.png`
+  htmlStr='场所测试名字xxx'
+
+}else {
+iconUrlText=`../images/icon_xfd.png`
+  htmlStr='xf字xxx'
+
+}
+
+
+    if (map) {
+      let opts  = L.icon({
+        iconUrl:iconUrlText ,
+        iconSize: [25, 28],
+      })
+      // if (this._markerOne) {
+      //   map.removeLayer(this._markerOne)
+      // }
+      let marker = L.marker([lat, lng], { icon: opts })
+      marker.addTo(map).on('click', function (e) {
+console.log(e.latlng.lat+" "+e.latlng.lng);
+
+      // alert(e.latlng.lat+" "+e.latlng.lng)
+
+console.log(e.target.options.icon);
+
+})
+      // }).bindPopup(htmlStr,{ className: 'mypopup' }).openPopup()
+     // this._markerOne = marker
+      map.panTo([lat, lng])
+      map.setZoom(17)
+          popupLayoutLayer.addMarker(marker, htmlStr)
+
+    }
+
+  }
+
+
+
+   window.addMarkerRlt = function (lat, lng) {
+      
+    
+     var testData = {
+            max: 50,
+            data: [{ lat: 36.97753, lng: 118.09856, count: 2 },
+                { lat: 36.97453, lng: 118.09556, count: 1 },
+                               { lat: 36.96553, lng: 118.09766, count: 3 },
+
+            ]
+        };  
+
+    
+         heatmapLayer  .setData(testData);
+
+  }
+ // 图层显示
+    function showLayer() {
+
+   addMarkerOneType(36.97853, 118.09856,"fj")
+  addMarkerOneType(36.97653, 118.09556,"xq")
+
+  addMarkerOneType(36.97553, 118.09566,"cs")
+
+  addMarkerOneType(36.96553, 118.09566,"xld")
+        myLayerGroup.showLayer()
+    }
+
+    // 图层隐藏
+    function hideLayer() {
+
+
+popupLayoutLayer.getMarkers().forEach( function(item){
+          
+          // log.e("marker",item)
+          item.remove()
+        })
+      //  myLayerGroup.hideLayer()
+    }
+
+  
+
+           addMarkerRlt(35.958312, 120.201416)
+
+addLine(36.977653, 118.09596,36.96153, 118.09566,36.96953, 118.09666)
+        // myLayerGroup.showLayer()
+
+// popupLayoutLayer.showPopup()
+var htmlStr2="<div  class='center' style='width:70px;height:20px;'><img  align='right' margin-left='20' src='../images/stop-markerh.png' width='15' height='20' alt='' /></div>"
+ 
+
+showLayer()
+
+
+// hideRlt()
+// addMarkerRlt(1,1)
+
+// function hideRlt(){
+//    var testData = {
+//             max: 0,
+//             data: [
+//             ]
+//         };  
+
+    
+//          heatmapLayer  .setData(testData);
+// }
+function hideXLLX(){
+
+}
+function hidewangge(){
+
+}
+
+
+
+   window.hideALl =function hideALl(){ 
+  var i=0
+    map.eachLayer(function (layer) { 
+      console.log(layer)
+if(i!=0){
+       map.removeLayer(layer); 
+     }
+     i+=1
+    }); 
+    // map.addLayer(tile); 
+} 
+// hideALl()
+addLine(36.977653, 118.09596,36.96153, 118.09566,36.96953, 118.09666)
+
+           addMarkerRlt(35.958312, 120.201416)
+
+// showLayer()
+// hideLayer()
+// showLayer()
+ 
+
+    //markers.push(marker1);
+  // markers.push(marker2);
+    //markers.push(marker3);
+  //  markers.push(marker4);
+
+   // var citiesLayer = L.layerGroup(markers);
+
+   // map.addLayer(citiesLayer);
+
+</script>
+
+        <input type="button" value="显示" onclick="showLayer()" />
+        <input type="button" value="隐藏" onclick="hideLayer()" />
+
+</body>
+</html>
