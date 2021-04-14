@@ -31,9 +31,9 @@ var lmapHostIp=getQueryString('api');
 var params = {
   map: {                                // 地图配置
     type: 'leaflet',                    // 地图类型
-    center: '[118.298645,36.8282]',    // 默认中心点
+    center: '[118.790652,36.855480]',    // 默认中心点  center: '[118.298645,36.8282]'
     zoom: 15,                           // 默认缩放等级
-    minZoom: 14,                         // 最小等级
+    minZoom: 10,                         // 最小等级
     maxZoom: 15,
 zoomControl: false,
 

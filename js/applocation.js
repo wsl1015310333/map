@@ -55965,3 +55965,6126 @@ var applocation='[\n' +
     '        "location_type": "2"\n' +
     '    }\n' +
     ']';
+
+var typeMarkerCDP='[\n' +
+    '    {\n' +
+    '        "id": 2,\n' +
+    '        "name": "屯西社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 2,\n' +
+    '        "manager_name": "李方鑫",\n' +
+    '        "manager_tel": "15414745412",\n' +
+    '        "lng": "118.134934902191",\n' +
+    '        "lat": "36.9837999343872",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 151,\n' +
+    '        "name": "引黄济青家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734598",\n' +
+    '        "lat": "36.890131",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 152,\n' +
+    '        "name": "海德公馆B区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.723694",\n' +
+    '        "lat": "36.890849",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 153,\n' +
+    '        "name": "苏州园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730554",\n' +
+    '        "lat": "36.890764",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 154,\n' +
+    '        "name": "海德公馆A区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.724479",\n' +
+    '        "lat": "36.890555",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 155,\n' +
+    '        "name": "石油公司南院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732417",\n' +
+    '        "lat": "36.892726",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 156,\n' +
+    '        "name": "兰亭香苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736152",\n' +
+    '        "lat": "36.892888",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 157,\n' +
+    '        "name": "英伦公馆",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.726642",\n' +
+    '        "lat": "36.894508",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 158,\n' +
+    '        "name": "中阳文圣园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 159,\n' +
+    '        "name": "牧渔东院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 160,\n' +
+    '        "name": "秋实小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735706",\n' +
+    '        "lat": "36.889996",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 161,\n' +
+    '        "name": "气象局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733532",\n' +
+    '        "lat": "36.891485",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 162,\n' +
+    '        "name": "牧渔西院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 163,\n' +
+    '        "name": "山东调宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734423",\n' +
+    '        "lat": "36.889188",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 164,\n' +
+    '        "name": "石油公司北院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732417",\n' +
+    '        "lat": "36.892726",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 165,\n' +
+    '        "name": "种子总公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736158",\n' +
+    '        "lat": "36.891901",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 166,\n' +
+    '        "name": "百货大楼家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 167,\n' +
+    '        "name": "新华印业家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.838044",\n' +
+    '        "lat": "36.845670",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 168,\n' +
+    '        "name": "教育印刷厂家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 169,\n' +
+    '        "name": "民政局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748676",\n' +
+    '        "lat": "36.882320",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 170,\n' +
+    '        "name": "棉麻公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734347",\n' +
+    '        "lat": "36.876681",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 171,\n' +
+    '        "name": "总工会家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 172,\n' +
+    '        "name": "生产资料家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733882",\n' +
+    '        "lat": "36.875707",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 173,\n' +
+    '        "name": "新华园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736977",\n' +
+    '        "lat": "36.878549",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 174,\n' +
+    '        "name": "圣达生活广场住宅楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735460",\n' +
+    '        "lat": "36.878020",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 175,\n' +
+    '        "name": "交警队家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730717",\n' +
+    '        "lat": "36.877722",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 176,\n' +
+    '        "name": "千榕家纺家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732927",\n' +
+    '        "lat": "36.868940",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 177,\n' +
+    '        "name": "三棉厂家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 178,\n' +
+    '        "name": "工商银行家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735125",\n' +
+    '        "lat": "36.876141",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 179,\n' +
+    '        "name": "晨鸣家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730669",\n' +
+    '        "lat": "36.877086",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 180,\n' +
+    '        "name": "新兴家园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734808",\n' +
+    '        "lat": "36.875492",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 181,\n' +
+    '        "name": "公路公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731100",\n' +
+    '        "lat": "36.879556",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 182,\n' +
+    '        "name": "福盛家园南区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731689",\n' +
+    '        "lat": "36.875282",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 183,\n' +
+    '        "name": "锦汇苑小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.737451",\n' +
+    '        "lat": "36.879406",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 184,\n' +
+    '        "name": "福盛家园北区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731975",\n' +
+    '        "lat": "36.877379",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 185,\n' +
+    '        "name": "昌鸿新达城小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738971",\n' +
+    '        "lat": "36.874895",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 186,\n' +
+    '        "name": "金融小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.737846",\n' +
+    '        "lat": "36.880762",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 187,\n' +
+    '        "name": "公安局城区家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784622",\n' +
+    '        "lat": "36.867281",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 188,\n' +
+    '        "name": "盛凯家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 189,\n' +
+    '        "name": "商贸组团小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735972",\n' +
+    '        "lat": "36.877431",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 190,\n' +
+    '        "name": "人寿保险家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.746891",\n' +
+    '        "lat": "36.866642",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 191,\n' +
+    '        "name": "市联社家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 192,\n' +
+    '        "name": "凯马家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732851",\n' +
+    '        "lat": "36.860120",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 193,\n' +
+    '        "name": "粮食局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743210",\n' +
+    '        "lat": "36.883457",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 194,\n' +
+    '        "name": "菜秧子盐场家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 195,\n' +
+    '        "name": "西苑小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730737",\n' +
+    '        "lat": "36.881670",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 196,\n' +
+    '        "name": "五金公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.737260",\n' +
+    '        "lat": "36.876457",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 197,\n' +
+    '        "name": "经信局家属北院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735756",\n' +
+    '        "lat": "36.875267",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 198,\n' +
+    '        "name": "民营局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734075",\n' +
+    '        "lat": "36.872282",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 199,\n' +
+    '        "name": "市联社家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 200,\n' +
+    '        "name": "供销社家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736955",\n' +
+    '        "lat": "36.873616",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 201,\n' +
+    '        "name": "市委家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738445",\n' +
+    '        "lat": "36.877610",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 202,\n' +
+    '        "name": "购物中心宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732502",\n' +
+    '        "lat": "36.876012",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 203,\n' +
+    '        "name": "烟草公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 204,\n' +
+    '        "name": "华宇食品站小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 205,\n' +
+    '        "name": "清华名园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.729363",\n' +
+    '        "lat": "36.884295",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 206,\n' +
+    '        "name": "梨园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733692",\n' +
+    '        "lat": "36.890208",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 207,\n' +
+    '        "name": "兴隆嘉沅",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 208,\n' +
+    '        "name": "西城首府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.725104",\n' +
+    '        "lat": "36.887624",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 209,\n' +
+    '        "name": "金鑫组团",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.719761",\n' +
+    '        "lat": "36.883791",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 210,\n' +
+    '        "name": "潍科西区家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 211,\n' +
+    '        "name": "市府服务公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 212,\n' +
+    '        "name": "西关联中家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730373",\n' +
+    '        "lat": "36.880883",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 213,\n' +
+    '        "name": "技校家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732543",\n' +
+    '        "lat": "36.885045",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 214,\n' +
+    '        "name": "西关小学家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736841",\n' +
+    '        "lat": "36.883920",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 215,\n' +
+    '        "name": "大洋水产家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739000",\n' +
+    '        "lat": "36.881777",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 216,\n' +
+    '        "name": "教育局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.737446",\n' +
+    '        "lat": "36.884742",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 217,\n' +
+    '        "name": "党校家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.737731",\n' +
+    '        "lat": "36.882442",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 218,\n' +
+    '        "name": "商业小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.737926",\n' +
+    '        "lat": "36.881455",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 219,\n' +
+    '        "name": "干休所",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738452",\n' +
+    '        "lat": "36.882230",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 220,\n' +
+    '        "name": "建设局北院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.791837",\n' +
+    '        "lat": "36.854548",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 221,\n' +
+    '        "name": "文化名园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738886",\n' +
+    '        "lat": "36.884072",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 222,\n' +
+    '        "name": "一建公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.752398",\n' +
+    '        "lat": "36.870715",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 223,\n' +
+    '        "name": "市政公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733876",\n' +
+    '        "lat": "36.885924",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 224,\n' +
+    '        "name": "教师新村",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732584",\n' +
+    '        "lat": "36.886515",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 225,\n' +
+    '        "name": "寿光一中宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736389",\n' +
+    '        "lat": "36.886599",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 226,\n' +
+    '        "name": "华宇小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 227,\n' +
+    '        "name": "圣悦·理想之城-熙園",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 228,\n' +
+    '        "name": "人民医院家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.745790",\n' +
+    '        "lat": "36.888875",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 229,\n' +
+    '        "name": "银海花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.753657",\n' +
+    '        "lat": "36.890666",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 230,\n' +
+    '        "name": "银海玉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.753642",\n' +
+    '        "lat": "36.889207",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 231,\n' +
+    '        "name": "盛和居",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.747819",\n' +
+    '        "lat": "36.890264",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 232,\n' +
+    '        "name": "金色年华",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.757320",\n' +
+    '        "lat": "36.890999",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 233,\n' +
+    '        "name": "寿光城投·老年医养居住社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 234,\n' +
+    '        "name": "怡苑居",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.751228",\n' +
+    '        "lat": "36.872113",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 235,\n' +
+    '        "name": "银海尚景",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 236,\n' +
+    '        "name": "银海世家",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 237,\n' +
+    '        "name": "市立医院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.109984",\n' +
+    '        "lat": "36.724563",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 238,\n' +
+    '        "name": "银丰新都",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.752809",\n' +
+    '        "lat": "36.873909",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 239,\n' +
+    '        "name": "银海小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.755098",\n' +
+    '        "lat": "36.873902",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 240,\n' +
+    '        "name": "东宇银海SOHO",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.750905",\n' +
+    '        "lat": "36.875422",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 241,\n' +
+    '        "name": "商业新村",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.754863",\n' +
+    '        "lat": "36.879339",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 242,\n' +
+    '        "name": "地税局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.750495",\n' +
+    '        "lat": "36.879648",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 243,\n' +
+    '        "name": "外贸家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731961",\n' +
+    '        "lat": "36.870566",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 244,\n' +
+    '        "name": "圣城怡苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 245,\n' +
+    '        "name": "招待所家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.751575",\n' +
+    '        "lat": "36.874978",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 246,\n' +
+    '        "name": "黄河板材",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 247,\n' +
+    '        "name": "人造板厂家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.749000",\n' +
+    '        "lat": "36.874305",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 248,\n' +
+    '        "name": "油区办",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 249,\n' +
+    '        "name": "群利商住小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.740192",\n' +
+    '        "lat": "36.873077",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 250,\n' +
+    '        "name": "林业局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 251,\n' +
+    '        "name": "老检察院小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741313",\n' +
+    '        "lat": "36.880428",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 252,\n' +
+    '        "name": "新华书店家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.740199",\n' +
+    '        "lat": "36.875989",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 253,\n' +
+    '        "name": "水利局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734684",\n' +
+    '        "lat": "36.871787",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 254,\n' +
+    '        "name": "名门公馆",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741689",\n' +
+    '        "lat": "36.874307",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 255,\n' +
+    '        "name": "金鼎财富广场",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.746269",\n' +
+    '        "lat": "36.878391",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 256,\n' +
+    '        "name": "道口建筑公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.740646",\n' +
+    '        "lat": "36.882964",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 257,\n' +
+    '        "name": "城关工商所家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739583",\n' +
+    '        "lat": "36.879083",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 258,\n' +
+    '        "name": "千榕家纺家属院（购物中心对面）",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738688",\n' +
+    '        "lat": "36.873165",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 259,\n' +
+    '        "name": "承明广场",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 260,\n' +
+    '        "name": "农业局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.208994",\n' +
+    '        "lat": "36.428359",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 261,\n' +
+    '        "name": "千榕家纺家属院（鑫源金店）",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.772267",\n' +
+    '        "lat": "36.870398",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 262,\n' +
+    '        "name": "农机公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742460",\n' +
+    '        "lat": "36.866342",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 263,\n' +
+    '        "name": "妇幼保健院家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.108010",\n' +
+    '        "lat": "36.703648",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 264,\n' +
+    '        "name": "建行小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748065",\n' +
+    '        "lat": "36.872538",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 265,\n' +
+    '        "name": "渤海花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739285",\n' +
+    '        "lat": "36.878012",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 266,\n' +
+    '        "name": "锦嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.740687",\n' +
+    '        "lat": "36.874893",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 267,\n' +
+    '        "name": "中央花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744104",\n' +
+    '        "lat": "36.879131",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 268,\n' +
+    '        "name": "银苑小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.747847",\n' +
+    '        "lat": "36.876539",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 269,\n' +
+    '        "name": "仁达家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.161755",\n' +
+    '        "lat": "36.706774",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 270,\n' +
+    '        "name": "银都花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.747964",\n' +
+    '        "lat": "36.873887",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 271,\n' +
+    '        "name": "蔬菜公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.161755",\n' +
+    '        "lat": "36.706774",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 272,\n' +
+    '        "name": "中央华府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.430265",\n' +
+    '        "lat": "36.530202",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 273,\n' +
+    '        "name": "百货大楼家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.838201",\n' +
+    '        "lat": "36.708153",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 274,\n' +
+    '        "name": "财政局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743325",\n' +
+    '        "lat": "36.880200",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 275,\n' +
+    '        "name": "林业局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 276,\n' +
+    '        "name": "发改局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.747117",\n' +
+    '        "lat": "36.877756",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 277,\n' +
+    '        "name": "华茂贵宾楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742207",\n' +
+    '        "lat": "36.873905",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 278,\n' +
+    '        "name": "海洋渔业局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741947",\n' +
+    '        "lat": "36.878118",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 279,\n' +
+    '        "name": "畜牧局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744943",\n' +
+    '        "lat": "36.874191",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 280,\n' +
+    '        "name": "圣都嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.740580",\n' +
+    '        "lat": "36.880594",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 281,\n' +
+    '        "name": "四建家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 282,\n' +
+    '        "name": "老法院家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742059",\n' +
+    '        "lat": "36.880179",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 283,\n' +
+    '        "name": "农村商业银行宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.830506",\n' +
+    '        "lat": "36.855050",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 284,\n' +
+    '        "name": "联盟小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.725988",\n' +
+    '        "lat": "36.855684",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 285,\n' +
+    '        "name": "万华百合公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 286,\n' +
+    '        "name": "千榕家纺家属院（迎宾路）",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732927",\n' +
+    '        "lat": "36.868940",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 287,\n' +
+    '        "name": "口腔医院宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.763734",\n' +
+    '        "lat": "36.873130",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 288,\n' +
+    '        "name": "经贸局家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731961",\n' +
+    '        "lat": "36.870566",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 289,\n' +
+    '        "name": "林产品经销公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 290,\n' +
+    '        "name": "圣城街道办事处宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743244",\n' +
+    '        "lat": "36.879526",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 291,\n' +
+    '        "name": "永泰家纺公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.768125",\n' +
+    '        "lat": "36.872542",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 292,\n' +
+    '        "name": "武装部小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.756412",\n' +
+    '        "lat": "36.382970",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 293,\n' +
+    '        "name": "民政局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748676",\n' +
+    '        "lat": "36.882320",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 294,\n' +
+    '        "name": "造船厂家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.747791",\n' +
+    '        "lat": "36.881657",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 295,\n' +
+    '        "name": "温泉小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741694",\n' +
+    '        "lat": "36.884485",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 296,\n' +
+    '        "name": "公安局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.746091",\n' +
+    '        "lat": "36.886739",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 297,\n' +
+    '        "name": "槐香园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.774423",\n' +
+    '        "lat": "36.885840",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 298,\n' +
+    '        "name": "世豪华府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743973",\n' +
+    '        "lat": "36.880960",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 299,\n' +
+    '        "name": "防疫站家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744864",\n' +
+    '        "lat": "36.885630",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 300,\n' +
+    '        "name": "老市府家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741344",\n' +
+    '        "lat": "36.881515",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 301,\n' +
+    '        "name": "军干所",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744092",\n' +
+    '        "lat": "36.887290",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 302,\n' +
+    '        "name": "卫生局东院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.791100",\n' +
+    '        "lat": "36.859850",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 303,\n' +
+    '        "name": "太平洋保险公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748557",\n' +
+    '        "lat": "36.882020",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 304,\n' +
+    '        "name": "捕捞公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.747967",\n' +
+    '        "lat": "36.882537",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 305,\n' +
+    '        "name": "海洋渔业局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741947",\n' +
+    '        "lat": "36.878118",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 306,\n' +
+    '        "name": "京剧团",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741399",\n' +
+    '        "lat": "36.870345",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 307,\n' +
+    '        "name": "粮食局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743210",\n' +
+    '        "lat": "36.883457",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 308,\n' +
+    '        "name": "计生局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744453",\n' +
+    '        "lat": "36.883963",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 309,\n' +
+    '        "name": "卫生局家属院西院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744061",\n' +
+    '        "lat": "36.885230",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 310,\n' +
+    '        "name": "实验小学家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.746972",\n' +
+    '        "lat": "36.880814",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 311,\n' +
+    '        "name": "卫生学校宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.745134",\n' +
+    '        "lat": "36.887708",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 312,\n' +
+    '        "name": "现代美城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 313,\n' +
+    '        "name": "嘉和园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.762135",\n' +
+    '        "lat": "36.871732",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 314,\n' +
+    '        "name": "金穗大厦",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.758080",\n' +
+    '        "lat": "36.870837",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 315,\n' +
+    '        "name": "巨能公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.759747",\n' +
+    '        "lat": "36.871183",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 316,\n' +
+    '        "name": "清水嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.761725",\n' +
+    '        "lat": "36.874161",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 317,\n' +
+    '        "name": "东宇·盛景",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 318,\n' +
+    '        "name": "圣城中学公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.758084",\n' +
+    '        "lat": "36.875641",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 319,\n' +
+    '        "name": "现代丽城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 320,\n' +
+    '        "name": "华侨中学宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.759581",\n' +
+    '        "lat": "36.876709",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 321,\n' +
+    '        "name": "农村合作银行宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.966764",\n' +
+    '        "lat": "36.991473",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 322,\n' +
+    '        "name": "国税局宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.761149",\n' +
+    '        "lat": "36.870265",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 323,\n' +
+    '        "name": "幸福嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.756337",\n' +
+    '        "lat": "36.884781",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 324,\n' +
+    '        "name": "国土花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.750796",\n' +
+    '        "lat": "36.882426",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 325,\n' +
+    '        "name": "东关小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.751707",\n' +
+    '        "lat": "36.881325",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 326,\n' +
+    '        "name": "兆祥小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.754258",\n' +
+    '        "lat": "36.886495",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 327,\n' +
+    '        "name": "金都花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.753173",\n' +
+    '        "lat": "36.880757",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 328,\n' +
+    '        "name": "建设小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 329,\n' +
+    '        "name": "汽车站小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.726552",\n' +
+    '        "lat": "36.890759",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 330,\n' +
+    '        "name": "上海公馆",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.760868",\n' +
+    '        "lat": "36.895426",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 331,\n' +
+    '        "name": "一中花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.761587",\n' +
+    '        "lat": "36.885976",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 332,\n' +
+    '        "name": "壹号公馆",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.759092",\n' +
+    '        "lat": "36.892689",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 333,\n' +
+    '        "name": "红仙霞家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.758853",\n' +
+    '        "lat": "36.880796",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 334,\n' +
+    '        "name": "东景花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.843584",\n' +
+    '        "lat": "36.890623",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 335,\n' +
+    '        "name": "春风江南小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 336,\n' +
+    '        "name": "城投新居时代",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 337,\n' +
+    '        "name": "万龙实业公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 338,\n' +
+    '        "name": "香榭澜庭·锦都",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.817165",\n' +
+    '        "lat": "36.861712",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 339,\n' +
+    '        "name": "香榭澜庭·尚都",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.817165",\n' +
+    '        "lat": "36.861712",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 340,\n' +
+    '        "name": "香榭澜庭·御都",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.817165",\n' +
+    '        "lat": "36.861712",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 341,\n' +
+    '        "name": "香榭澜庭·铭都",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.817165",\n' +
+    '        "lat": "36.861712",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 342,\n' +
+    '        "name": "香榭澜庭·锦都北区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.817165",\n' +
+    '        "lat": "36.861712",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 343,\n' +
+    '        "name": "清河·熙华园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 344,\n' +
+    '        "name": "中阳御景名都",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.823605",\n' +
+    '        "lat": "36.859186",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 345,\n' +
+    '        "name": "泓润华府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.815830",\n' +
+    '        "lat": "36.863660",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 346,\n' +
+    '        "name": "洛城街道家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.827367",\n' +
+    '        "lat": "36.856284",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 347,\n' +
+    '        "name": "悦动生态城6号小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 348,\n' +
+    '        "name": "悦动生态城1号小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 349,\n' +
+    '        "name": "邵家庄子社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.807091",\n' +
+    '        "lat": "36.865318",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 350,\n' +
+    '        "name": "中南世纪星城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.810673",\n' +
+    '        "lat": "36.864157",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 351,\n' +
+    '        "name": "豪苑花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.812560",\n' +
+    '        "lat": "36.858931",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 352,\n' +
+    '        "name": "学府东郡",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.823913",\n' +
+    '        "lat": "36.876561",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 353,\n' +
+    '        "name": "凡尔赛花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.809976",\n' +
+    '        "lat": "36.871769",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 354,\n' +
+    '        "name": "御水圣境秀苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 355,\n' +
+    '        "name": "御水圣境鑫苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 356,\n' +
+    '        "name": "尧水幸福A社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 357,\n' +
+    '        "name": "西范社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 358,\n' +
+    '        "name": "尧水幸福C社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 359,\n' +
+    '        "name": "尧水幸福B社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 360,\n' +
+    '        "name": "桥南李社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.804974",\n' +
+    '        "lat": "36.861423",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 361,\n' +
+    '        "name": "尧水幸福C社区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 362,\n' +
+    '        "name": "德润绿城玉兰园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.808250",\n' +
+    '        "lat": "36.848200",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 363,\n' +
+    '        "name": "清河紫云台",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.808230",\n' +
+    '        "lat": "36.857050",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 364,\n' +
+    '        "name": "德润绿城百合园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.810005",\n' +
+    '        "lat": "36.848365",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 365,\n' +
+    '        "name": "牡丹园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.772250",\n' +
+    '        "lat": "36.868868",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 366,\n' +
+    '        "name": "威尼斯小镇",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.800274",\n' +
+    '        "lat": "36.853353",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 367,\n' +
+    '        "name": "凯马花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.825513",\n' +
+    '        "lat": "36.845340",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 368,\n' +
+    '        "name": "德润绿城金桂园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 369,\n' +
+    '        "name": "锦绣东城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 370,\n' +
+    '        "name": "碧桂园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.825250",\n' +
+    '        "lat": "36.846654",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 371,\n' +
+    '        "name": "德润绿城御园一期",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.799107",\n' +
+    '        "lat": "36.848923",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 372,\n' +
+    '        "name": "泰和华宇-东城玉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.762743",\n' +
+    '        "lat": "36.860103",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 373,\n' +
+    '        "name": "春江花月",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 374,\n' +
+    '        "name": "德润绿城丹桂园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 375,\n' +
+    '        "name": "德润绿城·紫桂园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 376,\n' +
+    '        "name": "德润绿城海棠园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 377,\n' +
+    '        "name": "万华·丁香园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 378,\n' +
+    '        "name": "天地人纺织宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 379,\n' +
+    '        "name": "洛城电商大厦宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.831248",\n' +
+    '        "lat": "36.855052",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 380,\n' +
+    '        "name": "国税局宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.761149",\n' +
+    '        "lat": "36.870265",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 381,\n' +
+    '        "name": "建设银行家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.747801",\n' +
+    '        "lat": "36.872667",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 382,\n' +
+    '        "name": "环境监测站家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741113",\n' +
+    '        "lat": "36.868759",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 383,\n' +
+    '        "name": "建工局西院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 384,\n' +
+    '        "name": "装饰公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 385,\n' +
+    '        "name": "祥龙小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744315",\n' +
+    '        "lat": "36.871759",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 386,\n' +
+    '        "name": "凯德华SOHO",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739290",\n' +
+    '        "lat": "36.868644",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 387,\n' +
+    '        "name": "文广新局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 388,\n' +
+    '        "name": "喜丰农膜家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 389,\n' +
+    '        "name": "计委家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 390,\n' +
+    '        "name": "盐业公司家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742500",\n' +
+    '        "lat": "36.862250",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 391,\n' +
+    '        "name": "中国银行家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 392,\n' +
+    '        "name": "劳动局家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 393,\n' +
+    '        "name": "中医院家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.223653",\n' +
+    '        "lat": "36.773747",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 394,\n' +
+    '        "name": "人民银行家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.768436",\n' +
+    '        "lat": "36.867522",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 395,\n' +
+    '        "name": "建新小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738134",\n' +
+    '        "lat": "36.862458",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 396,\n' +
+    '        "name": "汽车站家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.726552",\n' +
+    '        "lat": "36.890759",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 397,\n' +
+    '        "name": "供销贸易家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 398,\n' +
+    '        "name": "沁园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.745446",\n' +
+    '        "lat": "36.863468",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 399,\n' +
+    '        "name": "果品公司",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741934",\n' +
+    '        "lat": "36.871645",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 400,\n' +
+    '        "name": "建设局南院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744159",\n' +
+    '        "lat": "36.864752",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 401,\n' +
+    '        "name": "南关小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744812",\n' +
+    '        "lat": "36.867565",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 402,\n' +
+    '        "name": "龙泉小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.165451",\n' +
+    '        "lat": "36.656611",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 403,\n' +
+    '        "name": "圣园巨小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742561",\n' +
+    '        "lat": "36.869046",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 404,\n' +
+    '        "name": "三里小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.740377",\n' +
+    '        "lat": "36.870790",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 405,\n' +
+    '        "name": "鸿正领寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742238",\n' +
+    '        "lat": "36.866772",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 406,\n' +
+    '        "name": "金顿一品",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739170",\n' +
+    '        "lat": "36.866570",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 407,\n' +
+    '        "name": "华侨小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744091",\n' +
+    '        "lat": "36.869286",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 408,\n' +
+    '        "name": "油区办",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 409,\n' +
+    '        "name": "晨鸣热电家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.716256",\n' +
+    '        "lat": "36.861959",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 410,\n' +
+    '        "name": "立新小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742954",\n' +
+    '        "lat": "36.863257",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 411,\n' +
+    '        "name": "欣泰房产",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 412,\n' +
+    '        "name": "寿光市电影家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 413,\n' +
+    '        "name": "晨鸣热电家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.716256",\n' +
+    '        "lat": "36.861959",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 414,\n' +
+    '        "name": "广播局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.746678",\n' +
+    '        "lat": "36.868409",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 415,\n' +
+    '        "name": "供电公司北院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739440",\n' +
+    '        "lat": "36.864644",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 416,\n' +
+    '        "name": "工商银行家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735125",\n' +
+    '        "lat": "36.876141",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 417,\n' +
+    '        "name": "工商局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748474",\n' +
+    '        "lat": "36.881157",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 418,\n' +
+    '        "name": "自来水西家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739240",\n' +
+    '        "lat": "36.883342",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 419,\n' +
+    '        "name": "实验中学家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744423",\n' +
+    '        "lat": "36.869192",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 420,\n' +
+    '        "name": "农机公司南院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742460",\n' +
+    '        "lat": "36.866342",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 421,\n' +
+    '        "name": "科技局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 422,\n' +
+    '        "name": "乡企局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 423,\n' +
+    '        "name": "向阳小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.746594",\n' +
+    '        "lat": "36.866724",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 424,\n' +
+    '        "name": "畜牧局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.744943",\n' +
+    '        "lat": "36.874191",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 425,\n' +
+    '        "name": "供电公司十号院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743024",\n' +
+    '        "lat": "36.863218",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 426,\n' +
+    '        "name": "华宇家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 427,\n' +
+    '        "name": "供电公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.740946",\n' +
+    '        "lat": "36.864226",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 428,\n' +
+    '        "name": "质监站家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 429,\n' +
+    '        "name": "环保局",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.814004",\n' +
+    '        "lat": "36.849958",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 430,\n' +
+    '        "name": "渤海实业",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 431,\n' +
+    '        "name": "商业大厦宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738205",\n' +
+    '        "lat": "36.873108",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 432,\n' +
+    '        "name": "供销社贸易大楼宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 433,\n' +
+    '        "name": "中阳集团家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742222",\n' +
+    '        "lat": "36.868830",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 434,\n' +
+    '        "name": "粮油总公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743210",\n' +
+    '        "lat": "36.883457",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 435,\n' +
+    '        "name": "人事局宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748112",\n' +
+    '        "lat": "36.871213",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 436,\n' +
+    '        "name": "老干部中心宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 437,\n' +
+    '        "name": "圣城交管所宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.757082",\n' +
+    '        "lat": "36.885627",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 438,\n' +
+    '        "name": "金顿大厦宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739336",\n' +
+    '        "lat": "36.866632",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 439,\n' +
+    '        "name": "汽车站小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.726552",\n' +
+    '        "lat": "36.890759",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 440,\n' +
+    '        "name": "设计院宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738134",\n' +
+    '        "lat": "36.862458",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 441,\n' +
+    '        "name": "人财保险公司南住宅楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 442,\n' +
+    '        "name": "保险公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.746962",\n' +
+    '        "lat": "36.866524",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 443,\n' +
+    '        "name": "文化局宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 444,\n' +
+    '        "name": "人才交流中心宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 445,\n' +
+    '        "name": "日报社家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.636622",\n' +
+    '        "lat": "37.023678",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 446,\n' +
+    '        "name": "德隆汽运公司",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784586",\n' +
+    '        "lat": "36.890242",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 447,\n' +
+    '        "name": "火车站家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748445",\n' +
+    '        "lat": "36.863346",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 448,\n' +
+    '        "name": "现代锦城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 449,\n' +
+    '        "name": "自来水公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.749751",\n' +
+    '        "lat": "36.868786",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 450,\n' +
+    '        "name": "农机局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731623",\n' +
+    '        "lat": "36.864788",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 451,\n' +
+    '        "name": "圣城小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.750193",\n' +
+    '        "lat": "36.870182",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 452,\n' +
+    '        "name": "玫瑰园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.761381",\n' +
+    '        "lat": "36.868651",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 453,\n' +
+    '        "name": "现代嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.754547",\n' +
+    '        "lat": "36.861846",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 454,\n' +
+    '        "name": "现代御园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.752872",\n' +
+    '        "lat": "36.869540",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 455,\n' +
+    '        "name": "优质蔬菜家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 456,\n' +
+    '        "name": "皮肤病家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.757741",\n' +
+    '        "lat": "36.870153",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 457,\n' +
+    '        "name": "小白龙家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 458,\n' +
+    '        "name": "一建商务大厦宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.722542",\n' +
+    '        "lat": "36.886373",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 459,\n' +
+    '        "name": "华盛·新城明珠·鼎园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.753668",\n' +
+    '        "lat": "36.858521",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 460,\n' +
+    '        "name": "新城明珠·尊园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.755411",\n' +
+    '        "lat": "36.856966",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 461,\n' +
+    '        "name": "新城明珠南区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.753551",\n' +
+    '        "lat": "36.855560",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 462,\n' +
+    '        "name": "新城明珠润园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.754297",\n' +
+    '        "lat": "36.854448",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 463,\n' +
+    '        "name": "百合嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734960",\n' +
+    '        "lat": "36.860672",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 464,\n' +
+    '        "name": "玉馨苑东区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731272",\n' +
+    '        "lat": "36.855432",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 465,\n' +
+    '        "name": "新正泰·世茂府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 466,\n' +
+    '        "name": "啤酒厂家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738145",\n' +
+    '        "lat": "36.855202",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 467,\n' +
+    '        "name": "三友圣锦花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733400",\n' +
+    '        "lat": "36.858324",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 468,\n' +
+    '        "name": "春蕾组团",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738044",\n' +
+    '        "lat": "36.857803",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 469,\n' +
+    '        "name": "祥和苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "119.034802",\n' +
+    '        "lat": "36.658663",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 470,\n' +
+    '        "name": "铁路花园东区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.749849",\n' +
+    '        "lat": "36.857459",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 471,\n' +
+    '        "name": "铁路花园西区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.743535",\n' +
+    '        "lat": "36.854805",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 472,\n' +
+    '        "name": "健元春家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732548",\n' +
+    '        "lat": "36.859307",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 473,\n' +
+    '        "name": "华源凯马家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732851",\n' +
+    '        "lat": "36.860120",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 474,\n' +
+    '        "name": "联盟第四生活区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734345",\n' +
+    '        "lat": "36.861680",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 475,\n' +
+    '        "name": "联盟第五生活区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732310",\n' +
+    '        "lat": "36.860181",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 476,\n' +
+    '        "name": "华星机械家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 477,\n' +
+    '        "name": "水利局南院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 478,\n' +
+    '        "name": "高层次人才创业园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 479,\n' +
+    '        "name": "枫华·丽园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 480,\n' +
+    '        "name": "金海花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.788686",\n' +
+    '        "lat": "36.876791",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 481,\n' +
+    '        "name": "巴龙国际",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.785781",\n' +
+    '        "lat": "36.868653",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 482,\n' +
+    '        "name": "港苑新空间",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.781739",\n' +
+    '        "lat": "36.877242",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 483,\n' +
+    '        "name": "建桥学校家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.791961",\n' +
+    '        "lat": "36.880921",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 484,\n' +
+    '        "name": "富邦水木清华",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.787560",\n' +
+    '        "lat": "36.888714",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 485,\n' +
+    '        "name": "学府.书香苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.781704",\n' +
+    '        "lat": "36.880605",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 486,\n' +
+    '        "name": "蓝湾康城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.787313",\n' +
+    '        "lat": "36.880358",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 487,\n' +
+    '        "name": "桃花岛",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784092",\n' +
+    '        "lat": "36.882284",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 488,\n' +
+    '        "name": "香堤雅苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.782792",\n' +
+    '        "lat": "36.883130",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 489,\n' +
+    '        "name": "天泰紫金府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 490,\n' +
+    '        "name": "光明医院宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784697",\n' +
+    '        "lat": "36.883703",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 491,\n' +
+    '        "name": "美林景苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.778957",\n' +
+    '        "lat": "36.857892",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 492,\n' +
+    '        "name": "美林花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.785746",\n' +
+    '        "lat": "36.854783",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 493,\n' +
+    '        "name": "环翠花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.780441",\n' +
+    '        "lat": "36.865547",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 494,\n' +
+    '        "name": "鸿基花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.780481",\n' +
+    '        "lat": "36.860412",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 495,\n' +
+    '        "name": "馨怡园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.782810",\n' +
+    '        "lat": "36.865164",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 496,\n' +
+    '        "name": "现代小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.780737",\n' +
+    '        "lat": "36.863401",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 497,\n' +
+    '        "name": "现代中学宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.786275",\n' +
+    '        "lat": "36.860873",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 498,\n' +
+    '        "name": "亿嘉好望角",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784743",\n' +
+    '        "lat": "36.849977",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 499,\n' +
+    '        "name": "美林御苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784230",\n' +
+    '        "lat": "36.847870",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 500,\n' +
+    '        "name": "德鑫嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.785327",\n' +
+    '        "lat": "36.846450",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 501,\n' +
+    '        "name": "水岸嘉园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.780267",\n' +
+    '        "lat": "36.849422",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 502,\n' +
+    '        "name": "五星花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.776726",\n' +
+    '        "lat": "36.849203",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 503,\n' +
+    '        "name": "巨能华府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.779183",\n' +
+    '        "lat": "36.846990",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 504,\n' +
+    '        "name": "左岸绿洲",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.789096",\n' +
+    '        "lat": "36.849753",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 505,\n' +
+    '        "name": "弥河玉城馨苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.905984",\n' +
+    '        "lat": "37.054869",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 506,\n' +
+    '        "name": "弥河玉城·瑞苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.905984",\n' +
+    '        "lat": "37.054869",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 507,\n' +
+    '        "name": "弥河玉城·玉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.905984",\n' +
+    '        "lat": "37.054869",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 508,\n' +
+    '        "name": "丽景花园北区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.799600",\n' +
+    '        "lat": "36.876956",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 509,\n' +
+    '        "name": "丽景花园南区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.796692",\n' +
+    '        "lat": "36.873388",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 510,\n' +
+    '        "name": "怡景花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.793159",\n' +
+    '        "lat": "36.876858",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 511,\n' +
+    '        "name": "卡诺岛南岛小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.804257",\n' +
+    '        "lat": "36.879308",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 512,\n' +
+    '        "name": "泰阳·国宾府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 513,\n' +
+    '        "name": "巨能嘉苑北区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.792891",\n' +
+    '        "lat": "36.886738",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 514,\n' +
+    '        "name": "太阳城·度假公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 515,\n' +
+    '        "name": "巨能嘉苑南区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.792891",\n' +
+    '        "lat": "36.886738",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 516,\n' +
+    '        "name": "卡诺岛北岛",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.804257",\n' +
+    '        "lat": "36.879308",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 517,\n' +
+    '        "name": "枫华·雅园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 518,\n' +
+    '        "name": "维园·金海湾花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.811201",\n' +
+    '        "lat": "36.886287",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 519,\n' +
+    '        "name": "专家公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.778784",\n' +
+    '        "lat": "36.885782",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 520,\n' +
+    '        "name": "教授新村",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.767267",\n' +
+    '        "lat": "36.884866",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 521,\n' +
+    '        "name": "万友小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 522,\n' +
+    '        "name": "潍科教师公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 523,\n' +
+    '        "name": "未来城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.770981",\n' +
+    '        "lat": "36.868116",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 524,\n' +
+    '        "name": "水泥厂家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.763425",\n' +
+    '        "lat": "36.867913",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 525,\n' +
+    '        "name": "正大·盛世华庭",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 526,\n' +
+    '        "name": "寿光市农业银行家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.763500",\n' +
+    '        "lat": "36.868057",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 527,\n' +
+    '        "name": "寿光市人民银行家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.768436",\n' +
+    '        "lat": "36.867522",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 528,\n' +
+    '        "name": "圣学家园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.772934",\n' +
+    '        "lat": "36.866971",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 529,\n' +
+    '        "name": "圣海花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.767515",\n' +
+    '        "lat": "36.867899",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 530,\n' +
+    '        "name": "阳光温泉花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.766569",\n' +
+    '        "lat": "36.864325",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 531,\n' +
+    '        "name": "邮政局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.764740",\n' +
+    '        "lat": "36.868051",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 532,\n' +
+    '        "name": "中阳鑫源组团",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.767162",\n' +
+    '        "lat": "36.866539",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 533,\n' +
+    '        "name": "邮电局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 534,\n' +
+    '        "name": "富康家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 535,\n' +
+    '        "name": "寿光市建设银行小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741553",\n' +
+    '        "lat": "36.866391",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 536,\n' +
+    '        "name": "乐尚中心小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.772410",\n' +
+    '        "lat": "36.859427",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 537,\n' +
+    '        "name": "联通小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 538,\n' +
+    '        "name": "二建家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 539,\n' +
+    '        "name": "清水泊农场家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.759954",\n' +
+    '        "lat": "36.872842",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 540,\n' +
+    '        "name": "卫生小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.765878",\n' +
+    '        "lat": "36.873615",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 541,\n' +
+    '        "name": "巨能城·翡翠苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 542,\n' +
+    '        "name": "盐业公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741490",\n' +
+    '        "lat": "36.862853",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 543,\n' +
+    '        "name": "东城花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.766454",\n' +
+    '        "lat": "36.870664",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 544,\n' +
+    '        "name": "富康小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.768732",\n' +
+    '        "lat": "36.864530",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 545,\n' +
+    '        "name": "东都小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.767125",\n' +
+    '        "lat": "36.870506",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 546,\n' +
+    '        "name": "墨龙花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.769456",\n' +
+    '        "lat": "36.872104",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 547,\n' +
+    '        "name": "海益数码港",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.771635",\n' +
+    '        "lat": "36.871255",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 548,\n' +
+    '        "name": "中南世纪城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.777269",\n' +
+    '        "lat": "36.869568",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 549,\n' +
+    '        "name": "恒信城市之光",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 550,\n' +
+    '        "name": "城投一品世家",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.767815",\n' +
+    '        "lat": "36.871969",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 551,\n' +
+    '        "name": "巨能城·海珀苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 552,\n' +
+    '        "name": "建设大厦",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.737939",\n' +
+    '        "lat": "36.863139",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 553,\n' +
+    '        "name": "开发区建筑家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.773159",\n' +
+    '        "lat": "36.873382",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 554,\n' +
+    '        "name": "运输公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.748844",\n' +
+    '        "lat": "36.869375",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 555,\n' +
+    '        "name": "金玉米家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.775439",\n' +
+    '        "lat": "36.871258",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 556,\n' +
+    '        "name": "齐民思小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.774859",\n' +
+    '        "lat": "36.869537",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 557,\n' +
+    '        "name": "鞋厂家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 558,\n' +
+    '        "name": "仙霞圣东大厦",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.770552",\n' +
+    '        "lat": "36.869053",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 559,\n' +
+    '        "name": "鲁东会计事务所宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.769027",\n' +
+    '        "lat": "36.868988",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 560,\n' +
+    '        "name": "全福元国际商务区宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 561,\n' +
+    '        "name": "金顿云著",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 562,\n' +
+    '        "name": "凤华·百丽澜庭A区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 563,\n' +
+    '        "name": "玉泉苑小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.768046",\n' +
+    '        "lat": "36.847772",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 564,\n' +
+    '        "name": "正阳花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.765330",\n' +
+    '        "lat": "36.851445",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 565,\n' +
+    '        "name": "唐宁7号",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 566,\n' +
+    '        "name": "德仁苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 567,\n' +
+    '        "name": "玉德苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.764601",\n' +
+    '        "lat": "36.856891",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 568,\n' +
+    '        "name": "世纪花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.774344",\n' +
+    '        "lat": "36.857911",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 569,\n' +
+    '        "name": "北大领世郡",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.772432",\n' +
+    '        "lat": "36.853762",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 570,\n' +
+    '        "name": "中南城市金典",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.775763",\n' +
+    '        "lat": "36.855948",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 571,\n' +
+    '        "name": "教师温泉新村",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 572,\n' +
+    '        "name": "盛唐悦府",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 573,\n' +
+    '        "name": "德邻苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.767995",\n' +
+    '        "lat": "36.858411",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 574,\n' +
+    '        "name": "国立食品公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731246",\n' +
+    '        "lat": "36.857264",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 575,\n' +
+    '        "name": "后张新村二期",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.723924",\n' +
+    '        "lat": "36.864367",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 576,\n' +
+    '        "name": "华宇小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 577,\n' +
+    '        "name": "景新园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.723247",\n' +
+    '        "lat": "36.855701",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 578,\n' +
+    '        "name": "玉馨苑西区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.728921",\n' +
+    '        "lat": "36.855466",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 579,\n' +
+    '        "name": "联盟第二生活区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.726531",\n' +
+    '        "lat": "36.856836",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 580,\n' +
+    '        "name": "热电厂宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 581,\n' +
+    '        "name": "晨鸣物业南生活区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 582,\n' +
+    '        "name": "公安局工业区家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784622",\n' +
+    '        "lat": "36.867281",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 583,\n' +
+    '        "name": "文家法庭家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.707248",\n' +
+    '        "lat": "36.883378",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 584,\n' +
+    '        "name": "向阳公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.725929",\n' +
+    '        "lat": "36.874439",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 585,\n' +
+    '        "name": "后张新村一期",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.723924",\n' +
+    '        "lat": "36.864367",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 586,\n' +
+    '        "name": "九巷公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.729754",\n' +
+    '        "lat": "36.879080",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 587,\n' +
+    '        "name": "苹果公寓",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.720665",\n' +
+    '        "lat": "36.878210",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 588,\n' +
+    '        "name": "晨鸣厂区一号院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 589,\n' +
+    '        "name": "天成宏利家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 590,\n' +
+    '        "name": "技术监督局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732316",\n' +
+    '        "lat": "36.869839",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 591,\n' +
+    '        "name": "联盟西院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.729065",\n' +
+    '        "lat": "36.866146",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 592,\n' +
+    '        "name": "长运公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.728112",\n' +
+    '        "lat": "36.863469",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 593,\n' +
+    '        "name": "水产公司西家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739240",\n' +
+    '        "lat": "36.883342",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 594,\n' +
+    '        "name": "工业组团",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.727948",\n' +
+    '        "lat": "36.866580",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 595,\n' +
+    '        "name": "水产公司东家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.742563",\n' +
+    '        "lat": "36.862969",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 596,\n' +
+    '        "name": "证劵小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 597,\n' +
+    '        "name": "再生资源小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733096",\n' +
+    '        "lat": "36.869973",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 598,\n' +
+    '        "name": "燃料公司小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 599,\n' +
+    '        "name": "房管局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731913",\n' +
+    '        "lat": "36.868097",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 600,\n' +
+    '        "name": "怡园花都",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730769",\n' +
+    '        "lat": "36.866889",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 601,\n' +
+    '        "name": "圣和苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730528",\n' +
+    '        "lat": "36.868719",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 602,\n' +
+    '        "name": "荟仕名苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730664",\n' +
+    '        "lat": "36.870812",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 603,\n' +
+    '        "name": "质监局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732336",\n' +
+    '        "lat": "36.869756",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 604,\n' +
+    '        "name": "交通局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738025",\n' +
+    '        "lat": "36.870426",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 605,\n' +
+    '        "name": "光明小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732181",\n' +
+    '        "lat": "36.870313",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 606,\n' +
+    '        "name": "商业锦苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735882",\n' +
+    '        "lat": "36.872654",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 607,\n' +
+    '        "name": "怡园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736913",\n' +
+    '        "lat": "36.863405",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 608,\n' +
+    '        "name": "千榕家纺家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732927",\n' +
+    '        "lat": "36.868940",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 609,\n' +
+    '        "name": "土产公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 610,\n' +
+    '        "name": "丽都小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733957",\n' +
+    '        "lat": "36.863278",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 611,\n' +
+    '        "name": "颐和园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 612,\n' +
+    '        "name": "大唐芙蓉园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736970",\n' +
+    '        "lat": "36.872632",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 613,\n' +
+    '        "name": "圣城小学家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.733636",\n' +
+    '        "lat": "36.868109",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 614,\n' +
+    '        "name": "奥华服装厂宿舍",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 615,\n' +
+    '        "name": "商务局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 616,\n' +
+    '        "name": "百货大楼宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739299",\n' +
+    '        "lat": "36.881224",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 617,\n' +
+    '        "name": "经信局南家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.791790",\n' +
+    '        "lat": "36.858080",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 618,\n' +
+    '        "name": "联盟北院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732089",\n' +
+    '        "lat": "36.863945",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 619,\n' +
+    '        "name": "贸易大楼家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.735000",\n' +
+    '        "lat": "36.863382",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 620,\n' +
+    '        "name": "老技术监督局家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732287",\n' +
+    '        "lat": "36.869903",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 621,\n' +
+    '        "name": "商业大厦",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.738205",\n' +
+    '        "lat": "36.873108",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 622,\n' +
+    '        "name": "园林局小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 623,\n' +
+    '        "name": "华银食品厂家属楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.730490",\n' +
+    '        "lat": "36.872104",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 624,\n' +
+    '        "name": "三建小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 625,\n' +
+    '        "name": "老物资家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 626,\n' +
+    '        "name": "盐业公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.741490",\n' +
+    '        "lat": "36.862853",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 627,\n' +
+    '        "name": "农机局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731623",\n' +
+    '        "lat": "36.864788",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 628,\n' +
+    '        "name": "水利局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734684",\n' +
+    '        "lat": "36.871787",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 629,\n' +
+    '        "name": "外贸小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731704",\n' +
+    '        "lat": "36.870417",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 630,\n' +
+    '        "name": "朝阳小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734707",\n' +
+    '        "lat": "36.871098",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 631,\n' +
+    '        "name": "禽蛋公司家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 632,\n' +
+    '        "name": "棉纺厂小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.729750",\n' +
+    '        "lat": "36.868934",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 633,\n' +
+    '        "name": "环卫处宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.739891",\n' +
+    '        "lat": "36.882652",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 634,\n' +
+    '        "name": "职工医院宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.732173",\n' +
+    '        "lat": "36.868277",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 635,\n' +
+    '        "name": "机电公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 636,\n' +
+    '        "name": "副食品加工厂宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.736970",\n' +
+    '        "lat": "36.872632",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 637,\n' +
+    '        "name": "刺绣厂宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.784483",\n' +
+    '        "lat": "36.897350",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 638,\n' +
+    '        "name": "公路局家属院",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.731100",\n' +
+    '        "lat": "36.879556",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 639,\n' +
+    '        "name": "老马店政府宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 640,\n' +
+    '        "name": "北苑花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.711870",\n' +
+    '        "lat": "36.890029",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 641,\n' +
+    '        "name": "前游小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.716156",\n' +
+    '        "lat": "36.886757",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 642,\n' +
+    '        "name": "迎客松小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.708469",\n' +
+    '        "lat": "36.884748",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 643,\n' +
+    '        "name": "杭州嘉园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.709599",\n' +
+    '        "lat": "36.889870",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 644,\n' +
+    '        "name": "市政嘉苑小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.734960",\n' +
+    '        "lat": "36.860672",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 645,\n' +
+    '        "name": "静山花园",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.715169",\n' +
+    '        "lat": "36.884692",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 646,\n' +
+    '        "name": "圣泰嘉苑",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.713867",\n' +
+    '        "lat": "36.890914",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 647,\n' +
+    '        "name": "文家小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.717991",\n' +
+    '        "lat": "36.881712",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 648,\n' +
+    '        "name": "锦华小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 649,\n' +
+    '        "name": "联盟小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.725988",\n' +
+    '        "lat": "36.855684",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 650,\n' +
+    '        "name": "馨园小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.711126",\n' +
+    '        "lat": "36.885591",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 651,\n' +
+    '        "name": "圣坤组团",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.708321",\n' +
+    '        "lat": "36.883740",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 652,\n' +
+    '        "name": "文苑小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.711464",\n' +
+    '        "lat": "36.884435",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 653,\n' +
+    '        "name": "教育小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.709903",\n' +
+    '        "lat": "36.883589",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 654,\n' +
+    '        "name": "欣源盛景",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.711797",\n' +
+    '        "lat": "36.882149",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 655,\n' +
+    '        "name": "城投锦绣城",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.708019",\n' +
+    '        "lat": "36.891660",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 656,\n' +
+    '        "name": "河头新村",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 657,\n' +
+    '        "name": "北潘新村",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 658,\n' +
+    '        "name": "老马店中学小区",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    },\n' +
+    '    {\n' +
+    '        "id": 659,\n' +
+    '        "name": "龙强机械公司宿舍楼",\n' +
+    '        "type_name": "小区",\n' +
+    '        "police_setting": 0,\n' +
+    '        "manager_name": "",\n' +
+    '        "manager_tel": "",\n' +
+    '        "lng": "118.790652",\n' +
+    '        "lat": "36.855480",\n' +
+    '        "area": false,\n' +
+    '        "type": "5"\n' +
+    '    }\n' +
+    ']';

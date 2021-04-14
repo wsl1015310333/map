@@ -8,6 +8,7 @@
     <meta name="x5-fullscreen" content="true">
     <link rel="stylesheet" href="../js/leaflet/leaflet.css">
     <script src="../js/config.js"></script>
+    <script src="../js/applocation.js"></script>
 
 
     <script src="../js/jquery-3.4.1.min.js"></script>
@@ -98,7 +99,7 @@
         initMap: function () {
             //        //配置
             var cfg = {
-                "radius": 0.001,
+                "radius": 0.002,
                 "maxOpacity": .8,
                 "scaleRadius": true,
                 "useLocalExtrema": true,
@@ -106,6 +107,7 @@
                 lngField: 'lng',
                 valueField: 'count'
             };
+
 
             heatmapLayer = new HeatmapOverlay(cfg);
 
@@ -131,21 +133,62 @@
             //      minZoom: mapOption.minZoom,
             //      mapTileHost: params.map.mapTileHost
             //    });
-       //   var pgisLayer = new L.TileLayer('http://www.sdmap.gov.cn/tileservice/SDPubMap?layer=sdvec&style=default&tilematrixset=c&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={z}&TileCol={x}&TileRow={y}', {
-       //       maxZoom: mapOption.maxZoom,
-       //       minZoom: mapOption.minZoom,
-       //       subdomains: [0, 1, 2],
-       //       tileSize: 256,
-       //       zoomOffset: 1,
+         var pgisLayer = new L.TileLayer('http://www.sdmap.gov.cn/tileservice/SDPubMap?layer=sdvec&style=default&tilematrixset=c&Service=WMTS&Request=GetTile&Version=1.0.0&Format=image%2Fpng&TileMatrix={z}&TileCol={x}&TileRow={y}', {
+             maxZoom: mapOption.maxZoom,
+             minZoom: mapOption.minZoom,
+             subdomains: [0, 1, 2],
+             tileSize: 256,
+             zoomOffset: 1,
 
-       //       mapTileHost: params.map.mapTileHost,
-       //       mapName: params.map.mapName
-       //   });
+             mapTileHost: params.map.mapTileHost,
+             mapName: params.map.mapName
+         });
             window.lmap = map = L.map('map', {
                 crs: L.CRS.EPSG4326,
                  zoomControl: params.map.zoomControl,
                 layers: [pgisLayer, heatmapLayer]
             }).setView([mapOption.center[1], mapOption.center[0]], mapOption.zoom);
+            map.on('dragend', function (e) {
+                // _this.getLocation()
+                //  console.log("dragend")
+                //_this. getLocation()
+                console.log("dragend")
+
+
+            });
+            map.on('zoomend', function (e) {
+                //  _this.getLocation()
+                console.log("zoomend")
+               /// _this. getLocation()
+
+
+            });
+            map.on('load', function (e) {
+                //  _this.getLocation()
+                console.log("load")
+                /// _this. getLocation()
+
+
+            });
+            map.on('viewreset', function (e) {
+                //  _this.getLocation()
+                console.log("viewreset")
+                /// _this. getLocation()
+
+
+            });
+            map.on('resize', function (e) {
+                //  _this.getLocation()
+                console.log("viewreset")
+                /// _this. getLocation()
+
+
+            });
+
+            window.onload = function(){
+                console.log("onload")
+
+            }
 
         }
     }
@@ -226,8 +269,8 @@
     });
 
 
-    window.addLine = function (startlat, startlng, endlat, endlng, currentLat, currentLng) {
-        var latlngs = [[startlat, startlng], [endlat, endlng]]
+    window.addLine = function (datas) {
+        var latlngs =JSON.parse(datas)
         var polyline = L.polyline(latlngs, {color: 'red', markertype: "line"}).addTo(map);
 
 
@@ -244,7 +287,7 @@
         // if (this._markerOne) {
         //   map.removeLayer(this._markerOne)
         // }
-        let marker = L.marker([startlat, startlng], {
+        let marker = L.marker([latlngs[0][0], latlngs[0][1]], {
             icon: opts
         })
         marker.addTo(map).on('click', function (e) {
@@ -255,7 +298,7 @@
             console.log(e.target.options.icon);
 
         })
-        let marker2 = L.marker([endlat, endlng], {
+        let marker2 = L.marker([latlngs[latlngs.length-1][0], latlngs[latlngs.length-1][1]], {
             icon: opts
         })
         marker2.addTo(map).on('click', function (e) {
@@ -298,9 +341,9 @@
     }
 
 
-    window.addMarkerOneType = function (lat, lng, type) {
+    window.addMarkerOneType = function (text,lat, lng, type) {
 
-        var string1 = "测试"
+        var string1 = text
         var stringPhone = "15275284005"
 
 
@@ -309,22 +352,22 @@
 
         var iconUrlText = ''
 //  alert(lat)
-        if (type == 'mj') {
+        if (type == 'mj') {//民警
             iconUrlText = `../images/icon_mj.png`
-        } else if (type == 'fj') {
+        } else if (type == 'fj') {//社会力量
             iconUrlText = `../images/icon_fj.png`
 
-        } else if (type == 'xq') {
-            htmlStr = '小区xxx'
+        } else if (type == 'xq') {//小区
+            htmlStr = text
             iconUrlText = `../images/icon_xq.png`
 
-        } else if (type == 'cs') {
+        } else if (type == 'cs') {//场所
             iconUrlText = `../images/icon_cs.png`
-            htmlStr = '场所测试名字xxx'
+            htmlStr = text
 
         } else {
             iconUrlText = `../images/icon_xfd.png`
-            htmlStr = 'xf字xxx'
+            htmlStr =text
 
         }
 
@@ -389,22 +432,26 @@
     //   [35.956312, 120.202416],
     //   [35.958312, 120.203416]
     // ]).addTo(map);
-    window.addMarkerRlt = function (lat, lng) {
-
-
+    window.addMarkerRlt = function (data) {
+// var datas=[{
+//      lat: 36.867134, lng: 118.7845515, count: 2},
+//     {lat: 36.867334, lng: 118.7855515, count: 1},
+//     {lat: 36.867434, lng: 118.7846515, count: 3},
+//     {lat: 36.867134, lng: 118.7829515, count: 1}
+// ];
+       var datas=[{count:2,lat:36.81989,lng:118.72449},{count:5,lat:36.81289,lng:118.72049}];
+    // JSON.parse(
         var testData = {
-            max: 50,
-            data: [{lat: 36.867134, lng: 118.7845515, count: 2},
-                {lat: 36.867334, lng: 118.7855515, count: 1},
-                {lat: 36.867434, lng: 118.7846515, count: 3},
-
-            ]
+            max: 0,
+            data: datas
         };
-
+        // map.panTo({lat:36.95316, lng: 118.75935});
+        map.panTo({lat:36.81289, lng: 118.72049});
 
         heatmapLayer.setData(testData);
 
     }
+    addMarkerRlt("")
     window.hideMarkerRlt = function (lat, lng) {
 
 
@@ -555,7 +602,81 @@
 
 
     window.showAllMarker = function () {
-        addLine(36.867134, 118.7845515, 36.867634, 118.7885515)
+        addLine("[\n" +
+            "                 [\n" +
+            "                     37.01571219880126,\n" +
+            "                     118.19915771484376\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.99679466285577,\n" +
+            "                     118.18027496337892\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.986648537946415,\n" +
+            "                     118.22078704833986\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.97074107796437,\n" +
+            "                     118.18817138671876\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.95620204311978,\n" +
+            "                     118.27331542968751\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.97101537268891,\n" +
+            "                     118.27125549316408\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     37.00227849112806,\n" +
+            "                     118.26610565185548\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     37.02037231812247,\n" +
+            "                     118.30215454101564\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.95976847846004,\n" +
+            "                     118.33408355712892\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.92519445448416,\n" +
+            "                     118.28704833984376\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.92739009701458,\n" +
+            "                     118.34506988525392\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.90735251496186,\n" +
+            "                     118.24138641357423\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.95098926024785,\n" +
+            "                     118.10096740722658\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.96004281272157,\n" +
+            "                     118.1514358520508\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.93836736111466,\n" +
+            "                     118.19950103759767\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     36.98692277533461,\n" +
+            "                     118.1514358520508\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     37.00913272027146,\n" +
+            "                     118.1569290161133\n" +
+            "                 ],\n" +
+            "                 [\n" +
+            "                     37.01379324306931,\n" +
+            "                     118.16345214843751\n" +
+            "                 ]\n" +
+            "             ]", 36.867634, 118.7885515)
+
         addMarkerRlt(36.867134, 118.7845515)
         addCurrentPosition(36.867734, 118.7845915)
         showLayer()
@@ -581,7 +702,53 @@
     // showLayer()
     // hideLayer()
     // showLayer()
-    showAllMarker()
+    //showAllMarker()
+
+
+    window.addMarkerCS=function (data){
+        var cdpMarkerjson=JSON.parse(data)
+        cdpMarkerjson.forEach( function(item){
+            if (item.lat!=null&&item.lat.length>0) {
+//1 场所-2 警务站-3 检查站-4 派出所-5
+                switch (item.type) {
+                    case "1":
+                        addMarkerOneType(item.name, item.lat, item.lng, "cs")
+                        break;
+                    case "2":
+                        addMarkerOneType(item.name, item.lat, item.lng, "cs")
+
+                        break;
+                    case "3":
+                        addMarkerOneType(item.name, item.lat, item.lng, "cs")
+                        break;
+                    case "4":
+                        addMarkerOneType(item.name, item.lat, item.lng, "cs")
+
+                        break;
+                    case "5":
+                        addMarkerOneType(item.name, item.lat, item.lng, "xq")
+
+                        break;
+                    default:
+
+                        break;
+                }
+            }
+        })
+    }
+   // addMarkerCS(typeMarkerCDP)
+
+  //  showAllMarker()
+
+    window.getCurrentSwNe=function (){
+        this._sw = window.lmap.getBounds()._southWest.lng + ',' + window.lmap.getBounds()._southWest.lat
+        this._ne = window.lmap.getBounds()._northEast.lng + ',' + window.lmap.getBounds()._northEast.lat
+
+        console.log(this,_sw+"   " +this._ne)
+    }
+    getCurrentSwNe()
+
+
     // showMap()
     //移动地图
     // var latlng = L.latLng(36.847034, 118.7405515);
