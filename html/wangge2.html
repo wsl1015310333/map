@@ -400,7 +400,23 @@
 
     }
 
-    window.addAera = function () {
+    window.addZxd=function (lat,lng,radius){
+        L.circle([lat, lng], radius, {
+            color: '#6fdd6f',
+            markerType: 'zxd',
+
+            fillColor: '#58f058',
+            fillOpacity: 0.5
+        }).addTo(map).bindPopup("I am a circle.");
+    }
+
+    window.addAera = function (type) {
+        var options={
+                markerType: type,
+            }
+
+
+
         //  L.polygon([
         //   [36.867134, 118.7845515],
         //   [36.878134, 118.7955515],
@@ -425,7 +441,7 @@
             [36.897134, 118.7885515],
 
             [36.857134, 118.7835515]
-        ]).addTo(map).bindPopup("I am a polygon.");
+        ],options).addTo(map).bindPopup("I am a polygon.");
     }
     // L.polygon([
     //   [35.952312, 120.201416],
@@ -451,7 +467,7 @@
         heatmapLayer.setData(testData);
 
     }
-    addMarkerRlt("")
+  //  addMarkerRlt("")
     window.hideMarkerRlt = function (lat, lng) {
 
 
@@ -703,8 +719,12 @@
     // hideLayer()
     // showLayer()
     //showAllMarker()
+    addAera("zxd")
+    map.eachLayer(function (layer) {
 
-
+     console.log(layer)
+    }
+    )
     window.addMarkerCS=function (data){
         var cdpMarkerjson=JSON.parse(data)
         cdpMarkerjson.forEach( function(item){
@@ -782,9 +802,6 @@
     // map.addLayer(citiesLayer);
 
 </script>
-
-<input type="button" value="显示" onclick="showLayer()"/>
-<input type="button" value="隐藏" onclick="hideLayer()"/>
 
 </body>
 </html>

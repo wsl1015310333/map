@@ -233,11 +233,14 @@
         console.log(e.target.options.icon);
 
     });
-
-
-    window.addLine=function(datas){
+    window.addLine2=function(data){
         alert(1)
-        var latlngs =JSON.parse(datas)
+        console.log(11)
+    }
+
+    window.addLine=function(latlngs,type){
+
+        //var latlngs =JSON.parse(datas)
         var polyline = L.polyline(latlngs, {color: 'red', markertype: "line"}).addTo(map);
 
 
@@ -257,7 +260,7 @@
         let marker = L.marker([latlngs[0][0], latlngs[0][1]], {
             icon: opts
         })
-        marke0r.addTo(map).on('click', function (e) {
+        marker.addTo(map).on('click', function (e) {
             console.log(e.latlng.lat + " " + e.latlng.lng);
 
             // alert(e.latlng.lat+" "+e.latlng.lng)
@@ -305,51 +308,52 @@
     }
 
 
-    window.addMarkerOneType = function (lat, lng,type) {
+    window.addMarkerOneType = function (text,lat, lng, type,phone) {
 
-        var string1="测试"
-        var stringPhone="15275284005"
-
-
-        var htmlStr="<div id='wrap' style='width:70px;height:30px;border-radius:4px;background-color:#ffffff;'><div style='width:70px;height:15px;'><div id ='div1' style='width:4px;height:4px;border-radius:50%;background-color:red;margin: 0px 0px 4px 0px'></div><font id='div2' style='font-size:14px;'>"+string1+"</div><font  style='font-size:8px;'>&nbsp"+stringPhone
-
-
+        var string1 = text
+        var stringPhone = ""
+        if(phone!=null){
+            stringPhone=phone
+        }
 
 
-        var iconUrlText=''
+        var htmlStr = "<div id='wrap' style='width:70px;height:30px;border-radius:4px;background-color:#ffffff;'><div style='width:70px;height:15px;'><div id ='div1' style='width:4px;height:4px;border-radius:50%;background-color:green;margin: 0px 0px 4px 0px'></div><font id='div2' style='font-size:14px;'>" + string1 + "</div><font  style='font-size:10px;'>&nbsp" + stringPhone
+
+
+        var iconUrlText = ''
 //  alert(lat)
-        if(type=='mj'){
-            iconUrlText=`../images/icon_mj.png`
-        }else if(type=='fj'){
-            iconUrlText=`../images/icon_fj.png`
+        if (type == 'mj') {//民警
+            iconUrlText = `../images/icon_mj.png`
+        } else if (type == 'fj') {//社会力量
+            iconUrlText = `../images/icon_fj.png`
 
-        }else if(type=='xq'){
-            htmlStr='小区xxx'
-            iconUrlText=`../images/icon_xq.png`
+        } else if (type == 'xq') {//小区
+            htmlStr = text
+            iconUrlText = `../images/icon_xq.png`
 
-        }else if(type=='cs'){
-            iconUrlText=`../images/icon_cs.png`
-            htmlStr='场所测试名字xxx'
+        } else if (type == 'cs') {//场所
+            iconUrlText = `../images/icon_cs.png`
+            htmlStr = text
 
-        }else {
-            iconUrlText=`../images/icon_xfd.png`
-            htmlStr='xf字xxx'
+        } else {
+            iconUrlText = `../images/icon_xfd.png`
+            htmlStr =text
 
         }
 
 
         if (map) {
-            let opts  = L.icon({
-                markertype:type,
-                iconUrl:iconUrlText ,
+            let opts = L.icon({
+                markertype: type,
+                iconUrl: iconUrlText,
                 iconSize: [25, 28],
             })
             // if (this._markerOne) {
             //   map.removeLayer(this._markerOne)
             // }
-            let marker = L.marker([lat, lng], { icon: opts })
+            let marker = L.marker([lat, lng], {icon: opts})
             marker.addTo(map).on('click', function (e) {
-                console.log(e.latlng.lat+" "+e.latlng.lng);
+                console.log(e.latlng.lat + " " + e.latlng.lng);
 
                 // alert(e.latlng.lat+" "+e.latlng.lng)
 
@@ -358,15 +362,41 @@
             })
             // }).bindPopup(htmlStr,{ className: 'mypopup' }).openPopup()
             // this._markerOne = marker
-            map.panTo([lat, lng])
-            map.setZoom(17)
+            // map.panTo([lat, lng])
+            map.setZoom(map.getZoom())
             popupLayoutLayer.addMarker(marker, htmlStr)
 
         }
 
     }
+    window.addxfd=function (lat,lng,radius,arr){
+        var options={
+            color: '#6fdd6f',
+            markerType: 'xfd',
+            fillColor: '#58f058',
+        }
+        L.circle([lat, lng], radius, options).addTo(map);
+
+        L.polygon(arr,options).addTo(map);
+
+    }
+
+    window.addxfdRectant=function (arr){
+        var options={
+            color: '#6fdd6f',
+            markerType: 'xfd',
+            fillColor: '#58f058',
+        }
+
+        L.polygon(arr,options).addTo(map);
+
+    }
+
 
     window.addAera=function(arr){
+        var options={
+            markerType: "ring",
+        }
         //  L.polygon([
         //   [36.867134, 118.7845515],
         //   [36.878134, 118.7955515],
@@ -384,7 +414,7 @@
         //    [35.958312, 120.203416]
         //  ]).addTo(map).bindPopup("I am a polygon.");
 
-        L.polygon(arr).addTo(map).bindPopup("I am a polygon.");
+        L.polygon(arr,options).addTo(map);
     }
     // L.polygon([
     //   [35.952312, 120.201416],
@@ -392,7 +422,10 @@
     //   [35.958312, 120.203416]
     // ]).addTo(map);
 
-    window.addMarkerRlt = function (datas) {
+    window.addMarkerRlt = function (dataJson) {
+        console.log("====")
+
+        console.log(dataJson)
 // var datas=[{
 //      lat: 36.867134, lng: 118.7845515, count: 2},
 //     {lat: 36.867334, lng: 118.7855515, count: 1},
@@ -400,47 +433,78 @@
 //     {lat: 36.867134, lng: 118.7829515, count: 5}
 // ];
 
-        var dataJson =JSON.parse(datas)
         var testData = {
             max: 0,
             data: dataJson
         };
 
-
+//map.panTo({lat: 36.95316, lng: 118.75935});
         heatmapLayer.setData(testData);
 
     }
 
-    window.addMarkerCS=function (data){
-        var cdpMarkerjson=JSON.parse(data)
+    window.addMarkerCS=function (cdpMarkerjson){
         cdpMarkerjson.forEach( function(item){
 //1 场所-2 警务站-3 检查站-4 派出所-5
-            switch (item.type) {
-                case "1":
-                    addMarkerOneType(item.name,item.lat,item.lng,"cs")
-                    break;
-                case "2":
-                    addMarkerOneType(item.name,item.lat,item.lng,"cs")
 
-                    break;
-                case "3":
-                    addMarkerOneType(item.name,item.lat,item.lng,"cs")
-                    break;
-                case "4":
-                    addMarkerOneType(item.name,item.lat,item.lng,"cs")
+            console.log(item.name,item.lat)
+            if(item.lat!=null&&item.lat.length>0){
+                switch (item.type) {
+                    case "1":
+                        addMarkerOneType(item.name,(item.lat),(item.lng),"cs","")
+                        break;
+                    case "2":
+                        addMarkerOneType(item.name,(item.lat),(item.lng),"cs","")
 
-                    break;
-                case "5":
-                    addMarkerOneType(item.name,item.lat,item.lng,"xq")
+                        break;
+                    case "3":
+                        addMarkerOneType(item.name,(item.lat),(item.lng),"cs","")
+                        break;
+                    case "4":
+                        addMarkerOneType(item.name,(item.lat),(item.lng),"cs","")
 
-                    break;
-                default:
+                        break;
+                    case "5":
+                        addMarkerOneType(item.name,item.lat,item.lng,"xq","")
 
-                    break;
+                        break;
+                    case "6":
+                        addMarkerOneType(item.name,item.lat,item.lng,"cs","")
+
+                        break;
+                    default:
+
+                        break;
+                }
             }
         })
     }
+    window.addMarkerOnline=function (cdpMarkerjson,typeMap){
+        cdpMarkerjson.forEach( function(item){
 
+            if(item.lat!=null&&item.lat.length>0){
+
+                console.log(item.name,item.lat)
+                switch (item.type) {
+                    case 1:
+                        if(typeMap=="mj"){
+                            addMarkerOneType(item.name,item.lat,item.lng,"mj",item.telephone)
+
+                        }
+                        break;
+                    case 2:
+                        if(typeMap=="fj"){
+
+                            addMarkerOneType(item.name,item.lat,item.lng,"fj",item.telephone)
+                        }
+                        break;
+                    default:
+
+                        break;
+                }
+            }
+        })
+    }
 
 
     window.getCurrentSwNe=function (){
@@ -530,12 +594,19 @@
                             isDelete=true
                         }
                     }
-                    else if(layer.hasOwnProperty("_rings"))
+                    else if(layer.options.hasOwnProperty("markerType")&&type==layer.options.markerType)
                     {
-                        if(type=="ring"){
-                            isDelete=true
-                        }
-                        console.log("区域")
+                        //if( layer.options.hasOwnProperty("markerType")){
+
+
+
+                                console.log("区域="+type)
+
+                                isDelete=true
+
+
+                      //  }
+                        console.log("区域"+type+"    "+layer.options.markerType)
 
 
 
@@ -613,8 +684,11 @@
         });
         // map.addLayer(tile);
     }
-    // hideALl()
-
+   // addxfd(36.867134, 118.7845515,36.867634,200)
+  //  addxfdRectant([[36.867134, 118.7845515],[36.867134,118.7885515],[36.867634, 118.7885515],[36.867634,118.7845515]])
+   // addxfd(36.867134, 118.7845515,36.867634,200)
+   // hideALl("xfd")
+    addxfdRectant([[36.99528654074488,118.12182426452637],[36.99528654074488,118.1283473968506],[36.99816565700228,118.1283473968506],[36.99816565700228,118.12182426452637]]
 
 
     window.showAllMarker=function (){
