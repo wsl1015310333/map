@@ -485,23 +485,20 @@
             if(item.lat!=null&&item.lat.length>0){
 
                 console.log(item.name,item.lat)
-                switch (item.type) {
-                    case 1:
-                        if(typeMap=="mj"){
-                            addMarkerOneType(item.name,item.lat,item.lng,"mj",item.telephone)
 
-                        }
-                        break;
-                    case 2:
-                        if(typeMap=="fj"){
+                if(typeMap=="mj"){
+                    console.log("lat mj",parseFloat(item.lat)+" "+parseFloat(item.lng))
 
-                            addMarkerOneType(item.name,item.lat,item.lng,"fj",item.telephone)
-                        }
-                        break;
-                    default:
+                    addMarkerOneType(item.name,parseFloat(item.lat),parseFloat(item.lng),"mj",item.telephone)
 
-                        break;
                 }
+                if(typeMap=="fj"){
+                    console.log("lat mj",parseFloat(item.lat)+" "+parseFloat(item.lng))
+
+                    addMarkerOneType(item.name,parseFloat(item.lat),parseFloat(item.lng),"fj",item.telephone)
+                }
+
+
             }
         })
     }
@@ -688,8 +685,9 @@
   //  addxfdRectant([[36.867134, 118.7845515],[36.867134,118.7885515],[36.867634, 118.7885515],[36.867634,118.7845515]])
    // addxfd(36.867134, 118.7845515,36.867634,200)
    // hideALl("xfd")
-    addxfdRectant([[36.99528654074488,118.12182426452637],[36.99528654074488,118.1283473968506],[36.99816565700228,118.1283473968506],[36.99816565700228,118.12182426452637]]
+    //addxfdRectant([[36.99528654074488,118.12182426452637],[36.99528654074488,118.1283473968506],[36.99816565700228,118.1283473968506],[36.99816565700228,118.12182426452637]]
 
+    addMarkerOnline( [{"camera_id":"","depart_name":"演示分局","direction":"","id":"16","last_lat":"36.867191","last_lng":"118.778725","lat":"36.867916","lng":"118.7777","name":"管理员","number":"16","person":[],"role":"大队长","speed":"","status":"1","telephone":"15500000000","type":"1","user_name":"管理员"},{"camera_id":"","depart_name":"演示分局-演示一中队","direction":"","id":"17","last_lat":"","last_lng":"","lat":"","lng":"","name":"小魏","number":"17","person":[],"role":"小队长","speed":"","status":"1","telephone":"15753236037","type":"1","user_name":"小魏"},{"camera_id":"","depart_name":"演示分局","direction":"","id":"56","last_lat":"","last_lng":"","lat":"","lng":"","name":"hddtest","number":"56","person":[],"role":"","speed":"","status":"1","telephone":"13695212651","type":"1","user_name":"hddtest"},{"camera_id":"","depart_name":"演示分局","direction":"","id":"62","last_lat":"","last_lng":"","lat":"","lng":"","name":"赵正航","number":"62","person":[],"role":"","speed":"","status":"1","telephone":"18254253192","type":"1","user_name":"赵正航"},{"camera_id":"","depart_name":"青岛市公安局-黄岛区开发分局分局","direction":"","id":"18","last_lat":"","last_lng":"","lat":"","lng":"","name":"weiyt普1","number":"18","person":[],"role":"","speed":"","status":"1","telephone":"13012070001","type":"1","user_name":"weiyt普1"},{"camera_id":"","depart_name":"青岛市公安局-黄岛公安分局","direction":"","id":"19","last_lat":"","last_lng":"","lat":"","lng":"","name":"weiyt普2","number":"19","person":[],"role":"","speed":"","status":"1","telephone":"13012070002","type":"1","user_name":"weiyt普2"},{"camera_id":"","depart_name":"演示分局","direction":"","id":"20","last_lat":"","last_lng":"","lat":"","lng":"","name":"lichenli","number":"20","person":[],"role":"","speed":"","status":"1","telephone":"13813813888","type":"1","user_name":"lichenli"},{"camera_id":"","depart_name":"淄博市公安局-张店分局-大张派出所-大张派出所天乙花苑警务区","direction":"","id":"21","last_lat":"","last_lng":"","lat":"","lng":"","name":"hdd","number":"21","person":[],"role":"","speed":"","status":"1","telephone":"13695985666","type":"1","user_name":"hdd"},{"camera_id":"","depart_name":"测试部门-子部门1122","direction":"","id":"22","last_lat":"","last_lng":"","lat":"","lng":"","name":"sc","number":"22","person":[],"role":"","speed":"","status":"1","telephone":"18561880915","type":"1","user_name":"sc"},{"camera_id":"","depart_name":"测试部门","direction":"","id":"23","last_lat":"","last_lng":"","lat":"","lng":"","name":"licl01","number":"23","person":[],"role":"","speed":"","status":"1","telephone":"13813813808","type":"1","user_name":"licl01"}],"mj")
 
     window.showAllMarker=function (){
         addLine(36.867134, 118.7845515,36.867634, 118.7885515)
