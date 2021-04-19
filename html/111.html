@@ -158,6 +158,74 @@
         zoomControl: params.map.zoomControl,
         layers: [pgisLayer, heatmapLayer]
       }).setView([mapOption.center[1], mapOption.center[0]], mapOption.zoom);
+
+      map.on('dragend', function (e) {
+        // _this.getLocation()
+        //  console.log("dragend")
+            getCurrentSwNe()
+
+      });
+      map.on('zoomend', function (e) {
+        //  _this.getLocation()
+        console.log("zoomend")
+        getCurrentSwNe()
+
+
+      });
+
+    }
+    ,
+    getLocation(){
+      var _this = this
+
+      var _bounds = map.getBounds()
+      var data = {}
+      this._sw = _bounds._southWest.lng + ',' + _bounds._southWest.lat
+      this._ne = _bounds._northEast.lng + ',' + _bounds._northEast.lat
+      var _sw2=  _bounds._southWest.lng+','+_bounds._northEast.lat
+      var _sw3=  _bounds._northEast.lng+','+_bounds._southWest.lat
+      var points = [{
+        lng:  _bounds._southWest.lng,
+        lat: _bounds._southWest.lat
+      },
+
+        {
+          lng:  _bounds._southWest.lng,
+          lat: _bounds._northEast.lat
+        },
+        {
+          lng:  _bounds._southWest.lng,
+          lat: _bounds._northEast.lat
+        },{
+          lng:  _bounds._northEast.lng,
+          lat:  _bounds._northEast.lat
+        }
+        ,  {
+          lng:  _bounds._northEast.lng,
+          lat: _bounds._southWest.lat
+        }
+
+
+      ]
+      hideALl("position")
+      // L.polygon([
+      //     [_bounds._southWest.lat, _bounds._southWest.lng],
+      //
+      //     [_bounds._northEast.lat, _bounds._southWest.lng],
+      //     [ _bounds._northEast.lat, _bounds._northEast.lng],
+      //     [_bounds._southWest.lat, _bounds._northEast.lng],
+      //
+      //
+      // ]).addTo(map).bindPopup("I am a polygon.");
+
+      getCurrentSwNe()
+
+
+
+
+      //  console.log("sw="+ this._sw+ "ne="+this._ne)
+      // var hh=   _this.IsPtInPoly( (_bounds._southWest.lng+ _bounds._northEast.lng)/2,(_bounds._southWest.lat+_bounds._northEast.lat)/2 ,points)
+      //  alert(hh)
     }
   }
 
@@ -369,8 +437,34 @@
     }
 
   }
+  window.addxfd=function (lat,lng,radius,arr){
+    var options={
+      color: '#6fdd6f',
+      markerType: 'xfd',
+      fillColor: '#58f058',
+    }
+    L.circle([lat, lng], radius, options).addTo(map);
+
+    L.polygon(arr,options).addTo(map);
+
+  }
+
+  window.addxfdRectant=function (arr){
+    var options={
+      color: '#6fdd6f',
+      markerType: 'xfd',
+      fillColor: '#58f058',
+    }
+
+    L.polygon(arr,options).addTo(map);
+
+  }
+
 
   window.addAera=function(arr){
+    var options={
+      markerType: "ring",
+    }
     //  L.polygon([
     //   [36.867134, 118.7845515],
     //   [36.878134, 118.7955515],
@@ -388,7 +482,7 @@
     //    [35.958312, 120.203416]
     //  ]).addTo(map).bindPopup("I am a polygon.");
 
-    L.polygon(arr).addTo(map);
+    L.polygon(arr,options).addTo(map);
   }
   // L.polygon([
   //   [35.952312, 120.201416],
@@ -458,23 +552,16 @@
 
       if(item.lat!=null&&item.lat.length>0){
 
-        console.log(item.name,item.lat)
-        switch (item.type) {
-          case 1:
-            if(typeMap=="mj"){
-              addMarkerOneType(item.name,item.lat,item.lng,"mj",item.telephone)
+        if(typeMap=="mj"){
+          console.log("lat mj",parseFloat(item.lat)+" "+parseFloat(item.lng))
 
-            }
-            break;
-          case 2:
-            if(typeMap=="fj"){
+          addMarkerOneType(item.name,parseFloat(item.lat),parseFloat(item.lng),"mj",item.telephone)
 
-              addMarkerOneType(item.name,item.lat,item.lng,"fj",item.telephone)
-            }
-            break;
-          default:
+        }
+        if(typeMap=="fj"){
+          console.log("lat mj",parseFloat(item.lat)+" "+parseFloat(item.lng))
 
-            break;
+          addMarkerOneType(item.name,parseFloat(item.lat),parseFloat(item.lng),"fj",item.telephone)
         }
       }
     })
@@ -482,10 +569,25 @@
 
 
   window.getCurrentSwNe=function (){
+
+    hideALl("cs")
     this._sw = window.lmap.getBounds()._southWest.lng + ',' + window.lmap.getBounds()._southWest.lat
     this._ne = window.lmap.getBounds()._northEast.lng + ',' + window.lmap.getBounds()._northEast.lat
 
-    console.log(this,_sw+"   " +this._ne)
+    var sw2=   window.lmap.getBounds()._southWest.lng+','+ window.lmap.getBounds()._northEast.lat
+    var sw3=  window.lmap.getBounds()._northEast.lng+','+window.lmap.getBounds()._southWest.lat
+
+
+
+    console.log(this._sw+"  ===== " +this._ne)
+
+    var jar=   android.setSwNe(this._sw,sw2,this._ne,sw3)
+
+    console.log(jar)
+
+
+    addMarkerCS(JSON.parse(jar))
+
   }
 
   window.hideMarkerRlt = function (lat, lng) {
@@ -568,12 +670,19 @@
               isDelete=true
             }
           }
-          else if(layer.hasOwnProperty("_rings"))
+          else if(layer.options.hasOwnProperty("markerType")&&type==layer.options.markerType)
           {
-            if(type=="ring"){
-              isDelete=true
-            }
-            console.log("区域")
+            //if( layer.options.hasOwnProperty("markerType")){
+
+
+
+            console.log("区域="+type)
+
+            isDelete=true
+
+
+            //  }
+            console.log("区域"+type+"    "+layer.options.markerType)
 
 
 
@@ -651,8 +760,10 @@
     });
     // map.addLayer(tile);
   }
-  // hideALl()
-
+  // addxfd(36.867134, 118.7845515,36.867634,200)
+  //  addxfdRectant([[36.867134, 118.7845515],[36.867134,118.7885515],[36.867634, 118.7885515],[36.867634,118.7845515]])
+  // addxfd(36.867134, 118.7845515,36.867634,200)
+  // hideALl("xfd")
 
 
   window.showAllMarker=function (){
@@ -712,9 +823,6 @@
   // map.addLayer(citiesLayer);
 
 </script>
-
-<input type="button" value="显示" onclick="showLayer()" />
-<input type="button" value="隐藏" onclick="hideLayer()" />
 
 </body>
 </html>
