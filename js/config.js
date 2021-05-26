@@ -31,11 +31,11 @@ var lmapHostIp=getQueryString('api');
 var params = {
   map: {                                // 地图配置
     type: 'leaflet',                    // 地图类型
-    center: '[118.790652,36.855480]',    // 默认中心点  center: '[118.298645,36.8282]'
+    center: '[118.298645,36.8282]',    // 默认中心点  center: '[118.298645,36.8282]' [118.790652,36.855480]
     zoom: 15,                           // 默认缩放等级
-    minZoom: 10,                         // 最小等级
+    minZoom: 12,                         // 最小等级
     maxZoom: 15,
-zoomControl: false,
+    zoomControl: false,
 
                            // 最大等级，leaflet不能超过17
     host: '127.0.0.1:3000',             //

@@ -67,14 +67,14 @@
     <div id="map"></div>
 </div>
 <script src="../js/leaflet/leaflet.js"></script>
-<script src="../js/leaflet/heatmap.min.js"></script>
+<!--<script src="../js/leaflet/heatmap.min.js"></script>-->
 
-<script src="../js/leaflet/leaflet-heatmap.js"></script>
-<script src="../js/leaflet/leaflet-heat.js"></script>
+<!--<script src="../js/leaflet/leaflet-heatmap.js"></script>-->
+<!--<script src="../js/leaflet/leaflet-heat.js"></script>-->
 <!--                 <script src="../js/leaflet/leaflet-tooltip-layout.dist.js"></script>
  -->
-<script type="text/javascript" src="../js/leaflet/Leaflet.PopupLayoutLayer.js"></script>
-<script type="text/javascript" src="../js/leaflet/leaflet.ShowHideLayerGroup.js"></script>
+<!--<script type="text/javascript" src="../js/leaflet/Leaflet.PopupLayoutLayer.js"></script>-->
+<!--<script type="text/javascript" src="../js/leaflet/leaflet.ShowHideLayerGroup.js"></script>-->
 
 
 <script src="../js/leaflet/setRotationAngle.js"></script>
@@ -89,9 +89,10 @@
         maxZoom: params.map.maxZoom,
     }
     var map = null
-    var heatmapLayer = null
+   // var heatmapLayer = null
     var selectMarker = []
      var showMarks=[]
+    var locaiotnMarker={}
     var mapCtrl = {
         _markerOne: null,
         _sw: '',
@@ -113,7 +114,7 @@
                 valueField: 'count'
             };
 
-            heatmapLayer = new HeatmapOverlay(cfg);
+          //  heatmapLayer = new HeatmapOverlay(cfg);
 
               var _this = this
 			//    // 桓台
@@ -155,9 +156,9 @@
          });
             window.lmap = map = L.map('map', {
                  crs: L.CRS.EPSG4326,//桓台
-                //crs: L.CRS.EPSG3857,
+               // crs: L.CRS.EPSG3857,
                  zoomControl: params.map.zoomControl,
-                layers: [pgisLayer, heatmapLayer]
+                layers: [pgisLayer]
             }).setView([mapOption.center[1], mapOption.center[0]], mapOption.zoom);
             map.on('dragend', function (e) {
                // _this.getLocation()
@@ -165,6 +166,7 @@
                 _this. getLocation()
 
             });
+
             map.on('zoomend', function (e) {
               //  _this.getLocation()
                 console.log("zoomend")
@@ -172,6 +174,13 @@
 
 
             });
+            window.onload = function(){
+               // alert("页面加载完成====》onload");
+
+                window.AgetLocation()
+                _this. getLocation()
+
+            }
 
         },
          IsPtInPoly(ALon, ALat, APoints) {
@@ -214,32 +223,33 @@
         var data = {}
         this._sw = _bounds._southWest.lng + ',' + _bounds._southWest.lat
         this._ne = _bounds._northEast.lng + ',' + _bounds._northEast.lat
+          console.log("center=" + map.getCenter())
            var _sw2=  _bounds._southWest.lng+','+_bounds._northEast.lat
             var _sw3=  _bounds._northEast.lng+','+_bounds._southWest.lat
             var points = [{
-                lng:  _bounds._southWest.lng,
-                lat: _bounds._southWest.lat
+                lng:  (_bounds._southWest.lng+map.getCenter().lng)/2,
+                lat: (_bounds._southWest.lat+map.getCenter().lat)/2
             },
 
                 {
-                    lng:  _bounds._southWest.lng,
-                    lat: _bounds._northEast.lat
+                    lng:  (_bounds._southWest.lng+map.getCenter().lng)/2,
+                    lat: (_bounds._northEast.lat+map.getCenter().lat)/2
                 },
                 {
-                lng:  _bounds._southWest.lng,
-                lat: _bounds._northEast.lat
+                lng:  (_bounds._southWest.lng+map.getCenter().lng)/2,
+                lat: (_bounds._northEast.lat+map.getCenter().lat)/2
             },{
-                lng:  _bounds._northEast.lng,
-                lat:  _bounds._northEast.lat
+                lng:  (_bounds._northEast.lng+map.getCenter().lng)/2,
+                lat:  (_bounds._northEast.lat+map.getCenter().lat)/2
             }
                 ,  {
-                    lng:  _bounds._northEast.lng,
-                    lat: _bounds._southWest.lat
+                    lng:  (_bounds._northEast.lng+map.getCenter().lng)/2,
+                    lat: (_bounds._southWest.lat+map.getCenter().lat)/2
                 }
 
 
             ]
-            hideALl("position")
+        //    hideALl("position")
             // L.polygon([
             //     [_bounds._southWest.lat, _bounds._southWest.lng],
             //
@@ -254,7 +264,8 @@
 
 
 
-            var locaiotnMarker=   JSON.parse(applocation)
+         //   var locaiotnMarker=   JSON.parse(applocation)
+            hideALl()
             showMarks=[]
 
                var i=0;
@@ -265,7 +276,6 @@
                        addCurrentPosition(item.latitude,item.longitude,item.location_id,item.location_type)
 
                        showMarks.push(item)
-
 
                    }
 
@@ -298,10 +308,10 @@
 
     // info.addTo(map);
 
-
-    var popupLayoutLayer = new L.popupLayoutLayer({
-        showAll: true // true，显示所有气泡；默认为 false，通过点击查看气泡，
-    }).addTo(map)
+    //
+    // var popupLayoutLayer = new L.popupLayoutLayer({
+    //     showAll: true // true，显示所有气泡；默认为 false，通过点击查看气泡，
+    // }).addTo(map)
     // get color depending on population density value
 
 
@@ -354,54 +364,66 @@
 
     });
 
+    window.AgetLocation=function (){
+         locaiotnMarker=   JSON.parse(applocation)
 
-    window.addLine = function (startlat, startlng, endlat, endlng, currentLat, currentLng) {
-        var latlngs = [[startlat, startlng], [endlat, endlng]]
-        var polyline = L.polyline(latlngs, {color: 'red', markertype: "line"}).addTo(map);
-
-
-        var iconUrlText = '../images/../images/icon_map_head.png'
-
-
-        let opts = L.icon({
-            markertype: "line",
-
-            iconUrl: iconUrlText,
-            iconSize: [18, 18],
-        })
-
-        // if (this._markerOne) {
-        //   map.removeLayer(this._markerOne)
-        // }
-        let marker = L.marker([startlat, startlng], {
-            icon: opts
-        })
-        marker.addTo(map).on('click', function (e) {
-            console.log(e.latlng.lat + " " + e.latlng.lng);
-
-            // alert(e.latlng.lat+" "+e.latlng.lng)
-
-            console.log(e.target.options.icon);
-
-        })
-        let marker2 = L.marker([endlat, endlng], {
-            icon: opts
-        })
-        marker2.addTo(map).on('click', function (e) {
-            console.log(e.latlng.lat + " " + e.latlng.lng);
-
-            // alert(e.latlng.lat+" "+e.latlng.lng)
-
-            console.log(e.target.options.icon);
-
-        })
-
-
-        // myLayerGroup.addLayer(marker1);
-        //          myLayerGroup.addLayer(marker2);
-        //          myLayerGroup.addLayer(marker3);
-        //          myLayerGroup.addLayer(polyline);
+     //   hideALl()
+        //locaiotnMarker=  JSON.parse(android.getIDArray());
+       // showMarks=[]
     }
+    window.addLocation=function(id){
+       // console.log(id)
+
+        selectMarker.push(id)
+
+
+        var i=0;
+        map.eachLayer(function (layer) {
+            if (i != 0 && i != 1) {
+                if(layer.options.icon.options.markerid.equals(id)){
+                    hideALl(id)//删除
+
+                    addCurrentPosition(layer.options.icon.options.lat,layer.options.icon.options.lng,id,layer.options.icon.options.markershowType)
+                }
+
+            }
+            i += 1
+        });
+
+        // selectMarker.slice(selectMarker.indexOf(e.target.options.icon.options.markerid),1)
+
+        // var currentLat="";
+        // var currenLng=""
+        // var currentType=""
+        // arr.forEach(function(value,index,array){
+        //     for(var i=0; i<selectMarker.length; i++) {
+        //         if(selectMarker[i].location_id ==value) {
+        //             currentLat = showMarks[i].latitude
+        //             currenLng = showMarks[i].longitude
+        //             currentType = showMarks[i].location_type
+        //             //  selectMarker.splice(i, 1);
+        //             //   break;
+        //             // }
+        //             addCurrentPosition(currentLat, currenLng, id, currentType)
+        //         }
+        //     }
+        // })
+
+
+
+
+        // selectMarker.slice(selectMarker.indexOf(e.target.options.icon.options.markerid),1)
+       // addCurrentPosition(currentLat,currenLng,id,currentType)
+
+       // mapCtrl.listControlMap(id,'del')
+       // mapCtrl.listControlMap(id,'add')
+
+       // android.androidGetId(mapCtrl._markerPickedIdArr.join(","))
+
+
+    }
+
+
 
 
     window.addCurrentPosition = function (currentLat, currentLng,id,type) {
@@ -413,9 +435,10 @@
 
        var iconUrlText2 = `../images/icon_mj.png`
 
-        console.log(selectMarker)
-        console.log(selectMarker.indexOf(id))
+     //   console.log(selectMarker)
+       // console.log(selectMarker.join(","))
 
+        //android.androidGetId(selectMarker.join(","))
 
         if(selectMarker.indexOf(id)>-1){
 
@@ -431,6 +454,8 @@
             markertype: "position",//map点位类型
             markerid: id,
             markershowType: type,//车辆人脸wifi围栏
+            lat: currentLat,//
+            lng: currentLng,//车辆人脸wifi围栏
 
             iconUrl: iconUrlText2,
             iconSize: [20, 20],
@@ -469,6 +494,8 @@
 
 
 
+
+
 // e.latlng.lat
 //             e.target.option.icon.options.id
         //
@@ -485,7 +512,7 @@
         //     marker3.background=`../images/icon_mj.png`
         //     // alert(e.latlng.lat+" "+e.latlng.lng)
         //  //   console.log(e.target.options.icon);
-            console.dir(e)
+           // console.dir(e)
         //
         //     hideALl("position")
         //
@@ -498,7 +525,10 @@
 
 
         })
-       // map.panTo({lat: currentLat, lng: currentLng});
+        console.log(marker3)
+
+
+        // map.panTo({lat: currentLat, lng: currentLng});
     }
 
 
@@ -562,6 +592,27 @@
 
     }
 
+    window.delLocation=function ( id){
+
+        var currentLat="";
+        var currenLng=""
+        var currentType=""
+        for(var i=0; i<selectMarker.length; i++) {
+            if(selectMarker[i] ==id) {
+                currentLat=showMarks[i].latitude
+                currenLng=showMarks[i].longitude
+                currentType=showMarks[i].location_type
+                selectMarker.splice(i, 1);
+                break;
+            }
+        }
+        hideALl(id)
+
+        // selectMarker.slice(selectMarker.indexOf(e.target.options.icon.options.markerid),1)
+        addCurrentPosition(currentLat,currenLng,id,currentType)
+    }
+
+
     window.addAera = function () {
         //  L.polygon([
         //   [36.867134, 118.7845515],
@@ -607,7 +658,7 @@
         };
 
 
-        heatmapLayer.setData(testData);
+       // heatmapLayer.setData(testData);
 
     }
     window.hideMarkerRlt = function (lat, lng) {
@@ -619,7 +670,7 @@
         };
 
 
-        heatmapLayer.setData(testData);
+       // heatmapLayer.setData(testData);
 
     }
 
@@ -645,7 +696,6 @@
 
     //     addMarkerRlt(35.958312, 120.201416)
 
-    // addLine(36.977653, 118.09596,36.96153, 118.09566,36.96953, 118.09666)
     // myLayerGroup.showLayer()
 
 
@@ -657,100 +707,22 @@
     }
 
 
-    window.hideALl = function (type) {
+    window.hideALl = function (id) {
 
-        var isDelete = false
+
         var i = 0
         map.eachLayer(function (layer) {
-            console.log(layer)
             if (i != 0 && i != 1) {
 
-
-                if (layer.hasOwnProperty("cfg")) {
-                    if (type == "rlt") {
-                        isDelete = true
-                    }
-                    console.log("热力图")
-                } else if (layer.hasOwnProperty("options")) {
-
-
-                    if (layer.options.hasOwnProperty("markertype") && layer.options.markertype == "line") {
-                        console.log("线")
-                        if (type == "line") {
-                            isDelete = true
-                        }
-                    } else if (layer.hasOwnProperty("_rings")) {
-                        if (type == "ring") {
-                            isDelete = true
-                        }
-                        console.log("区域")
+               if(id==null||id.length<1){
+                   map.removeLayer(layer);
+               } else {
+                   if(layer.options.icon.options.markerid==id){
+                       map.removeLayer(layer);
+                   }
+               }
 
 
-                    } else {
-                        if (layer.hasOwnProperty("options") && layer.options.hasOwnProperty("icon")) {
-                            if (layer.options.icon.options.markertype == "fj") {
-                                console.log("辅警")
-                                if (type == "fj") {
-                                    isDelete = true
-                                }
-                            } else if (layer.options.icon.options.markertype == "mj") {
-                                console.log("民警")
-                                if (type == "mj") {
-                                    isDelete = true
-                                }
-                            } else if (layer.options.icon.options.markertype == "xq") {
-                                console.log("小区")
-                                if (type == "xq") {
-                                    isDelete = true
-                                }
-
-                            } else if (layer.options.icon.options.markertype == "cs") {
-                                console.log("场所")
-                                if (type == "cs") {
-                                    isDelete = true
-                                }
-                            } else if (layer.options.icon.options.markertype == "position") {
-                                console.log("我的位置")
-
-                                if (type == "position") {
-                                    isDelete = true
-                                }
-
-                            } else if (layer.options.icon.options.markertype == "xfd") {
-                                console.log("寻访点")
-                                if (type == "xfd") {
-                                    isDelete = true
-                                }
-                            } else if (layer.options.icon.options.markertype == "line") {
-                                console.log("路线点")
-                                if (type == "line") {
-                                    isDelete = true
-                                }
-                            } else {
-
-                            }
-
-                        } else if (layer.hasOwnProperty("options") && layer.options.hasOwnProperty("showAll")) {
-                            isDelete = true
-                            console.log("所有点")
-                        }
-                    }
-
-                } else {
-                    console.log("什么地图也不是")
-                }
-
-
-                if (isDelete) {
-                    map.removeLayer(layer);
-
-                    if (type == "fj" || type == "mj" || type == "xq" || type == "xfd" || type == "cs") {
-                        map.removeLayer(layer);
-
-                    }
-
-                    isDelete = false
-                }
             }
             i += 1
         });
@@ -760,7 +732,7 @@
 
 
     window.showAllMarker = function () {
-        addLine(36.867134, 118.7845515, 36.867634, 118.7885515)
+
         addMarkerRlt(36.867134, 118.7845515)
         addCurrentPosition(36.867734, 118.7845915)
         showLayer()
