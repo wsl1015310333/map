@@ -245,11 +245,8 @@ let opts2  = L.icon({
  })
       marker.addTo(map).on('click', function (e) {
 console.log(e.latlng.lat+" "+e.latlng.lng);
-
       // alert(e.latlng.lat+" "+e.latlng.lng)
-
 console.log(e.target.options.icon);
-
 })
   let marker2 = L.marker([endlat, endlng], { icon: opts
  })
